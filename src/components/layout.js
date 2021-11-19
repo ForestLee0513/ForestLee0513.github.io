@@ -5,12 +5,14 @@ import styled from "styled-components"
 const MainWrapper = styled.div`
   width: 100%;
   height: 100vh;
-  padding: 20px 0;
+  padding-top: 40px;
 `
 
-const Layout = ({ location, children }) => {
+const Layout = ({ location, children, title }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
+
+  console.log(title)
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
