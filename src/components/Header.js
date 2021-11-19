@@ -25,6 +25,7 @@ const MenuButton = styled.button`
   background: none;
   dispaly: inilne-block;
   cursor: pointer;
+  font-size: 1em;
 `
 
 const StyledLink = styled(Link)`

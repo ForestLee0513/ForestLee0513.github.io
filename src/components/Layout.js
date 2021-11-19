@@ -18,11 +18,11 @@ const GlobalStyle = createGlobalStyle`
   ${reset}
 
   // 기준 폰트 적용
-  html {
-    font-size: 1em;
+  html, body {
+    font-size: 16px;
 
     @media only screen and (max-width: 1280px) {
-      font-size: 0.875em;
+      font-size: 14px;
     }
   }
   
@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
   // Heading Font Styles
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif KR', serif;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   h1 {
@@ -60,6 +60,11 @@ const GlobalStyle = createGlobalStyle`
 
   h6 {
     font-size: 1rem;
+  }
+
+  // Paragraph Style
+  p {
+    font-family: 'Noto Sans KR', sans-serif;
   }
 `
 
@@ -90,7 +95,7 @@ const MenuContainer = styled.div`
 const MenuLink = styled(Link)`
   font-family: "Noto Serif KR", serif;
   font-size: 2.986rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 `
 
 const Layout = ({ children }) => {
@@ -106,10 +111,10 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Header toggleMenu={toggleMenu} />
       <MenuContainer toggle={toggle}>
-        <MenuLink to="/test">자기소개</MenuLink>
-        <MenuLink to="/test">블로그</MenuLink>
-        <MenuLink to="/test">작업물</MenuLink>
-        <MenuLink to="/test">연락</MenuLink>
+        <MenuLink to="/about-me">자기소개</MenuLink>
+        <MenuLink to="/blog">블로그</MenuLink>
+        <MenuLink to="/portfolio">작업물</MenuLink>
+        <MenuLink to="/contact">연락</MenuLink>
       </MenuContainer>
       <MainWrapper>{children}</MainWrapper>
     </>
