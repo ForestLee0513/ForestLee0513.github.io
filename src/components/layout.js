@@ -1,24 +1,28 @@
 import * as React from "react"
 import Header from "./Header"
 import styled from "styled-components"
+import { createGlobalStyle } from "styled-components"
+import reset from "styled-reset" // style-reset 패키지
 
+// 메인 컨테이너
 const MainWrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 40px);
   padding-top: 40px;
 `
 
-const Layout = ({ location, children, title }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
+// 전역 스타일 적용
+const GlobalStyle = createGlobalStyle`
+  ${reset}
+`
 
-  console.log(title)
-
+const Layout = ({ children }) => {
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
+    <>
+      <GlobalStyle />
       <Header />
       <MainWrapper>{children}</MainWrapper>
-    </div>
+    </>
   )
 }
 
