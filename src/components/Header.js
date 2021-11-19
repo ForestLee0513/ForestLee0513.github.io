@@ -14,7 +14,7 @@ const HeaderWrapper = styled.div`
   justify-content: space-between;
   z-index: 2;
   // 모바일 일 때 좌우 간격을 20px로 조정
-  @media only screen and (max-width: 1280px) {
+  @media only screen and (max-width: 768px) {
     padding: 0 20px;
   }
 `
