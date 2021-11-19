@@ -19,24 +19,13 @@ const HeaderWrapper = styled.div`
   }
 `
 
-const Header = props => {
-  // const siteTitle = data.site.siteMetadata?.title || `Title`
-
+const Header = () => {
   return (
     <HeaderWrapper>
-      <Link to="/">메뉴</Link>
+      <p>메뉴</p>
       <Link to="/">홈</Link>
     </HeaderWrapper>
   )
 }
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
 
 export default Header
