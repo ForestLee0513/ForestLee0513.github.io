@@ -17,9 +17,13 @@ const GlobalStyle = createGlobalStyle`
   // Reset all styles with "styled-reset"
   ${reset}
 
-  // Body 기준 폰트 적용
-  body, button {
-    font-size: 16px;
+  // 기준 폰트 적용
+  html {
+    font-size: 1em;
+
+    @media only screen and (max-width: 1280px) {
+      font-size: 0.875em;
+    }
   }
   
   // Anchor global styles
@@ -31,6 +35,31 @@ const GlobalStyle = createGlobalStyle`
   // Heading Font Styles
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif KR', serif;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 3.583rem;
+  }
+
+  h2 {
+    font-size: 2.986rem;
+  }
+
+  h3 {
+    font-size: 1.728rem;
+  }
+  
+  h4 {
+    font-size: 1.44rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  h6 {
+    font-size: 1rem;
   }
 `
 
@@ -54,11 +83,14 @@ const MenuContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 `
 
 // 메뉴 Link 스타일
 const MenuLink = styled(Link)`
   font-family: "Noto Serif KR", serif;
+  font-size: 2.986rem;
+  margin-bottom: 10px;
 `
 
 const Layout = ({ children }) => {
@@ -74,9 +106,12 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Header toggleMenu={toggleMenu} />
       <MenuContainer toggle={toggle}>
-        <MenuLink to="/test">안녕하세요</MenuLink>
+        <MenuLink to="/test">자기소개</MenuLink>
+        <MenuLink to="/test">블로그</MenuLink>
+        <MenuLink to="/test">작업물</MenuLink>
+        <MenuLink to="/test">연락</MenuLink>
       </MenuContainer>
-      <MainWrapper>{children}asdf</MainWrapper>
+      <MainWrapper>{children}</MainWrapper>
     </>
   )
 }
