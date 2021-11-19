@@ -12,18 +12,30 @@ const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  z-index: 2;
   // 모바일 일 때 좌우 간격을 20px로 조정
   @media only screen and (max-width: 1280px) {
     padding: 0 20px;
   }
 `
 
-const Header = () => {
+const MenuButton = styled.button`
+  font-family: "Noto Serif KR", serif;
+  border: none;
+  background: none;
+  dispaly: inilne-block;
+  cursor: pointer;
+`
+
+const StyledLink = styled(Link)`
+  font-family: "Noto Serif KR", serif;
+`
+
+const Header = ({ toggleMenu }) => {
   return (
     <HeaderWrapper>
-      <p>메뉴</p>
-      <Link to="/">홈</Link>
+      <MenuButton onClick={toggleMenu}>메뉴</MenuButton>
+      <StyledLink to="/">홈</StyledLink>
     </HeaderWrapper>
   )
 }

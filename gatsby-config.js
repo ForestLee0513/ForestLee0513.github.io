@@ -12,6 +12,22 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: `Noto+Serif+KR`,
+            variants: ["400"],
+          },
+          {
+            family: `Noto+Sans+KR`,
+            variants: ["400"],
+          },
+        ],
+        display: `swap`,
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
     {
