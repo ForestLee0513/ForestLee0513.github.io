@@ -79,11 +79,11 @@ const MenuContainer = styled.div`
   right: 0;
   bottom: 0;
   // 메뉴 토글 애니메이션
-  transition: 0.4s all;
-  transform: ${props => (props.toggle ? "scaleY(1)" : "scaleY(0)")};
+  transition: 0.8s all;
+  transform: ${props => (props.toggle ? "translateY(0)" : "translateY(-100%)")};
   transform-origin: 100% 0;
   // 배경
-  background-color: white;
+  background-color: #f7f7f7;
   // 정렬
   display: flex;
   justify-content: center;
@@ -93,9 +93,29 @@ const MenuContainer = styled.div`
 
 // 메뉴 Link 스타일
 const MenuLink = styled(Link)`
+  @keyframes fade-in {
+    0%,
+    20% {
+      opacity: 0;
+      top: 50px;
+    }
+    80%,
+    100% {
+      opacity: 1;
+      top: 0px;
+    }
+  }
+
   font-family: "Noto Serif KR", serif;
   font-size: 2.986rem;
   margin-bottom: 20px;
+  overflow: hidden;
+  display: inline;
+  position: relative;
+  animation: ${props =>
+    props.toggle === "true" ? `fade-in ${props.delay}s` : ""};
+  ${props => (props.toggle === "false" ? "opacity: 0" : "")};
+  transition: 0.4s opacity;
 `
 
 const Layout = ({ children }) => {
@@ -111,10 +131,18 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Header toggleMenu={toggleMenu} />
       <MenuContainer toggle={toggle}>
-        <MenuLink to="/about-me">자기소개</MenuLink>
-        <MenuLink to="/blog">블로그</MenuLink>
-        <MenuLink to="/portfolio">작업물</MenuLink>
-        <MenuLink to="/contact">연락</MenuLink>
+        <MenuLink toggle={toggle.toString()} delay={1} to="/about-me">
+          자기소개
+        </MenuLink>
+        <MenuLink toggle={toggle.toString()} delay={1.2} to="/blog">
+          블로그
+        </MenuLink>
+        <MenuLink toggle={toggle.toString()} delay={1.4} to="/portfolio">
+          작업물
+        </MenuLink>
+        <MenuLink toggle={toggle.toString()} delay={1.6} to="/contact">
+          연락
+        </MenuLink>
       </MenuContainer>
       <MainWrapper>{children}</MainWrapper>
     </>
