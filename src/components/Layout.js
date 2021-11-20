@@ -1,6 +1,5 @@
-import React, { useState } from "react"
+import React from "react"
 import Header from "./Header"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { createGlobalStyle } from "styled-components"
 import reset from "styled-reset"

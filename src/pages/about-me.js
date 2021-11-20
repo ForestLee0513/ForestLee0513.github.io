@@ -1,13 +1,12 @@
 import * as React from "react"
 import Seo from "../components/Seo"
 
-const Index = () => {
+const AboutMe = () => {
   return (
     <>
-      <Seo title="홈" />
-      <h1>안녕하세요.</h1>
+      <Seo title="자기소개" />
     </>
   )
 }
 
-export default Index
+export default AboutMe

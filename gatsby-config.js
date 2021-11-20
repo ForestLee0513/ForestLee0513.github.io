@@ -11,7 +11,14 @@ module.exports = {
       twitter: `kylemathews`,
     },
   },
+
   plugins: [
+    {
+      resolve: "gatsby-plugin-layout",
+      options: {
+        component: require.resolve("./src/components/Layout.js"),
+      },
+    },
     {
       resolve: `gatsby-plugin-google-fonts-v2`,
       options: {

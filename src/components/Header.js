@@ -87,27 +87,54 @@ const Header = () => {
   // 메뉴 토글 제어
   const [toggle, setToggle] = useState(false)
 
-  const toggleMenu = () => {
-    setToggle(!toggle)
+  const toggleMenu = condition => {
+    typeof condition === "boolean" ? setToggle(condition) : setToggle(!toggle)
   }
 
   return (
     <>
       <HeaderWrapper>
         <MenuButton onClick={toggleMenu}>메뉴</MenuButton>
-        <StyledLink to="/">홈</StyledLink>
+        <StyledLink
+          to="/"
+          onClick={() => {
+            toggleMenu(false)
+          }}
+        >
+          홈
+        </StyledLink>
       </HeaderWrapper>
       <MenuContainer toggle={toggle}>
-        <MenuLink toggle={toggle.toString()} delay={1} to="/about-me">
+        <MenuLink
+          toggle={toggle.toString()}
+          onClick={toggleMenu}
+          delay={1}
+          to="/about-me"
+        >
           자기소개
         </MenuLink>
-        <MenuLink toggle={toggle.toString()} delay={1.2} to="/blog">
+        <MenuLink
+          toggle={toggle.toString()}
+          onClick={toggleMenu}
+          delay={1.2}
+          to="/blog"
+        >
           블로그
         </MenuLink>
-        <MenuLink toggle={toggle.toString()} delay={1.4} to="/portfolio">
+        <MenuLink
+          toggle={toggle.toString()}
+          onClick={toggleMenu}
+          delay={1.4}
+          to="/portfolio"
+        >
           작업물
         </MenuLink>
-        <MenuLink toggle={toggle.toString()} delay={1.6} to="/contact">
+        <MenuLink
+          toggle={toggle.toString()}
+          onClick={toggleMenu}
+          delay={1.6}
+          to="/contact"
+        >
           연락
         </MenuLink>
       </MenuContainer>
