@@ -60,7 +60,7 @@ const MenuButton = styled.button`
     content: "";
     position: absolute;
     width: 100%;
-    transform: scaleX(0);
+    transform: scaleX(1);
     height: 2px;
     bottom: 0px;
     left: 0;
@@ -70,7 +70,7 @@ const MenuButton = styled.button`
   }
 
   &:hover:after {
-    transform: scaleX(1);
+    transform: scaleX(0);
     transform-origin: bottom left;
   }
 `

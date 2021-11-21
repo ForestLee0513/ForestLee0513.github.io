@@ -8,7 +8,7 @@ const StyledArticle = styled.article`
   padding-top: 20px;
   padding-bottom: 20px;
 
-  h1 {
+  .headline {
     margin-bottom: 0;
   }
 
@@ -26,6 +26,15 @@ const StyledArticle = styled.article`
 
 const ArrowLink = styled(Link)`
   color: #000000;
+  &:after {
+    transform: scaleX(0);
+  }
+
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+    }
+  }
 `
 
 const Arrow = styled.img`
@@ -60,7 +69,7 @@ const BlogPostTemplate = ({ data }) => {
           목록으로 이동
         </ArrowLink>
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
+          <h1 className="headline">{post.frontmatter.title}</h1>
           <p className="date">{post.frontmatter.date}</p>
         </header>
         <section
