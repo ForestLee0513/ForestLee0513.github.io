@@ -12,7 +12,7 @@ const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 2;
+  z-index: 3;
   // 모바일 일 때 좌우 간격을 20px로 조정
   @media only screen and (max-width: 768px) {
     padding: 0 20px;
@@ -24,7 +24,7 @@ const MenuContainer = styled.div`
   // 너비, 높이, 위치 지정
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -40,6 +40,7 @@ const MenuContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 2;
 `
 
 const MenuButton = styled.button`
