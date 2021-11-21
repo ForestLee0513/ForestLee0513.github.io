@@ -105,15 +105,36 @@ const GlobalStyle = createGlobalStyle`
 
   .page {
     top: 0;
-    transition: opacity 0.3s;
+    transition: 0.3s all;
   }
-  .page.entering,
+
+  .page.entering {
+    opacity: 0;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    
+    // 모바일 컨테이너 width 90%로 고정
+    @media only screen and (max-width: 768px) {
+      width: 90%;
+    }
+    // 해상도가 1440px 일 때 1280px로 고정
+    @media only screen and (min-width: 1440px) {
+      width: 1280px;
+    }
+  }
+
   .page.entered {
     position: relative;
     opacity: 1;
   }
-  .page.exiting,
-  .page.exited {
+
+  .page.exiting {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -123,6 +144,7 @@ const GlobalStyle = createGlobalStyle`
     margin-left: auto;
     margin-right: auto;
     width: 700px;
+    transform: translateY(-100px);
     
     // 모바일 컨테이너 width 90%로 고정
     @media only screen and (max-width: 768px) {
