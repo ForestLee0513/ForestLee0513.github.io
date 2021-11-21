@@ -39,6 +39,7 @@ const Title = styled.div`
   font-family: "Noto Serif KR", serif;
   p {
     font-family: "Noto Serif KR", serif;
+    display: inline-block;
   }
   font-size: 2.986rem;
   line-height: 1.5;
@@ -48,7 +49,12 @@ const InnerTitleContainer = styled.b`
   float: left;
   overflow: hidden;
   position: relative;
-  height: 62px;
+  @media only screen and (max-width: 768px) {
+    height: 62px;
+  }
+  @media only screen and (min-width: 768px) {
+    height: 71px;
+  }
 `
 
 const InnerTitle = styled.div`
@@ -70,25 +76,24 @@ const InnerTitle = styled.div`
     }
     animation: move 8s infinite;
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 769px) {
     @keyframes move {
       /* mobile */
       0% {
         top: 0px;
       }
       20% {
-        top: -72px;
+        top: -71px;
       }
       40% {
         top: -142px;
       }
       60% {
-        top: -214px;
+        top: -213px;
       }
     }
     animation: move 8s infinite;
   }
-
   font-family: "Noto Serif KR", serif;
   display: inline-block;
   position: relative;
@@ -117,6 +122,7 @@ const Index = () => {
               </InnerTitle>
             </InnerTitleContainer>
             <p>을</p>
+            <br />
             <p>더하다</p>
           </Title>
         </ForestImageGroup>
