@@ -24,6 +24,10 @@ const StyledArticle = styled.article`
   }
 `
 
+const ArrowLink = styled(Link)`
+  color: #000000;
+`
+
 const Arrow = styled.img`
   margin-right: 10px;
   transform: translateY(1px)
@@ -51,10 +55,10 @@ const BlogPostTemplate = ({ data }) => {
         itemScope
         itemType="http://schema.org/Article"
       >
-        <Link to="/blog">
+        <ArrowLink to="/blog">
           <Arrow src={arrowImage} alt="arrow" />
           목록으로 이동
-        </Link>
+        </ArrowLink>
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p className="date">{post.frontmatter.date}</p>
@@ -77,18 +81,18 @@ const BlogPostTemplate = ({ data }) => {
         >
           <li>
             {previous && (
-              <Link to={`/blog${previous.fields.slug}`} rel="prev">
+              <ArrowLink to={`/blog${previous.fields.slug}`} rel="prev">
                 <Arrow src={arrowImage} alt="arrow" />
                 {previous.frontmatter.title}
-              </Link>
+              </ArrowLink>
             )}
           </li>
           <li>
             {next && (
-              <Link to={`/blog${next.fields.slug}`} rel="next">
+              <ArrowLink to={`/blog${next.fields.slug}`} rel="next">
                 {next.frontmatter.title}{" "}
                 <Arrow src={arrowImage} alt="arrow" direction="right" />
-              </Link>
+              </ArrowLink>
             )}
           </li>
         </ul>
