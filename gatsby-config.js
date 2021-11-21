@@ -11,7 +11,9 @@ module.exports = {
       twitter: `kylemathews`,
     },
   },
-
+  flags: {
+    DEV_SSR: false,
+  },
   plugins: [
     {
       resolve: "gatsby-plugin-layout",

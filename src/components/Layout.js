@@ -25,17 +25,11 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   
-  // Anchor global styles
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-
   // Heading Font Styles
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif KR', serif;
     margin-bottom: 20px;
-    line-height: 1.2;
+    line-height: 1.3;
   }
 
   h1 {
@@ -65,6 +59,31 @@ const GlobalStyle = createGlobalStyle`
   // Paragraph Style
   p {
     font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  // Anchor global styles
+  a {
+    color: inherit;
+    text-decoration: none;
+    position : relative;
+  }
+
+  a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 `
 

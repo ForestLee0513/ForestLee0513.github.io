@@ -49,10 +49,33 @@ const MenuButton = styled.button`
   display: inilne-block;
   cursor: pointer;
   font-size: 1em;
+  line-height: 1.5;
+  position: relative;
+  padding: 0;
+  margin: 0;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 `
 
 const StyledLink = styled(Link)`
   font-family: "Noto Serif KR", serif;
+  line-height: 1.5;
 `
 
 // 메뉴 Link 스타일
@@ -80,7 +103,7 @@ const MenuLink = styled(Link)`
     props.toggle === "true" ? `fade-in ${props.delay}s` : ""};
   ${props => (props.toggle === "false" ? "opacity: 0" : "")};
   transition: 0.4s opacity;
-  line-height: 1.2;
+  line-height: 1.3;
 `
 
 const Header = () => {
