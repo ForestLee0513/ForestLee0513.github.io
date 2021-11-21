@@ -30,7 +30,7 @@ const MenuContainer = styled.div`
   right: 0;
   bottom: 0;
   // 메뉴 토글 애니메이션
-  transition: 0.8s all;
+  transition: 0.8s transform;
   transform: ${props => (props.toggle ? "translateY(0)" : "translateY(-100%)")};
   transform-origin: 100% 0;
   // 배경

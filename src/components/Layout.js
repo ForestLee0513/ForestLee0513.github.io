@@ -3,6 +3,7 @@ import Header from "./Header"
 import styled from "styled-components"
 import { createGlobalStyle } from "styled-components"
 import reset from "styled-reset"
+import { Transition, TransitionGroup } from "react-transition-group"
 
 // Main Container
 const MainWrapper = styled.div`
@@ -99,15 +100,52 @@ const GlobalStyle = createGlobalStyle`
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  .page {
+    top: 0;
+    transition: opacity 0.3s;
+  }
+  .page.entering,
+  .page.entered {
+    position: relative;
+    opacity: 1;
+  }
+  .page.exiting,
+  .page.exited {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    
+    // 모바일 컨테이너 width 90%로 고정
+    @media only screen and (max-width: 768px) {
+      width: 90%;
+    }
+    // 해상도가 1440px 일 때 1280px로 고정
+    @media only screen and (min-width: 1440px) {
+      width: 1280px;
+    }
+  }
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   return (
-    <MainWrapper>
+    <>
       <GlobalStyle />
       <Header />
-      {children}
-    </MainWrapper>
+      <TransitionGroup component={null}>
+        <Transition key={location.pathname} timeout={{ enter: 300, exit: 300 }}>
+          {status => (
+            <MainWrapper className={`page ${status}`}>{children}</MainWrapper>
+          )}
+        </Transition>
+      </TransitionGroup>
+    </>
   )
 }
 
