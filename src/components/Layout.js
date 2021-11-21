@@ -137,7 +137,7 @@ const GlobalStyle = createGlobalStyle`
   .page.exiting {
     opacity: 0;
     position: absolute;
-    top: 0;
+    top: 100px;
     right: 0;
     bottom: 0;
     left: 0; 
