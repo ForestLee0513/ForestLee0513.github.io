@@ -1,36 +1,71 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-
-import Layout from "../components/Layout"
 import Seo from "../components/Seo"
+import styled from "styled-components"
+import arrowImage from "../images/arrow.svg"
 
-const BlogPostTemplate = ({ data, location }) => {
+const StyledArticle = styled.article`
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .date {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #858585;
+  }
+
+  .gatsby-resp-image-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+`
+
+const Arrow = styled.img`
+  margin-right: 10px;
+  transform: translateY(1px)
+    ${props =>
+      props.direction === "right" ? "translateX(6px) rotate(180deg)" : ""};
+`
+
+const BlogNavContainer = styled.div`
+  padding-top: 20px;
+  padding-bottom: 20px;
+`
+
+const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <>
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article
+      <StyledArticle
         className="blog-post"
         itemScope
         itemType="http://schema.org/Article"
       >
+        <Link to="/blog">
+          <Arrow src={arrowImage} alt="arrow" />
+          목록으로 이동
+        </Link>
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <p className="date">{post.frontmatter.date}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
-      </article>
-      <nav className="blog-post-nav">
+      </StyledArticle>
+      <hr />
+      <BlogNavContainer>
         <ul
           style={{
             display: `flex`,
@@ -42,21 +77,23 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+              <Link to={`/blog${previous.fields.slug}`} rel="prev">
+                <Arrow src={arrowImage} alt="arrow" />
+                {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+              <Link to={`/blog${next.fields.slug}`} rel="next">
+                {next.frontmatter.title}{" "}
+                <Arrow src={arrowImage} alt="arrow" direction="right" />
               </Link>
             )}
           </li>
         </ul>
-      </nav>
-    </Layout>
+      </BlogNavContainer>
+    </>
   )
 }
 
@@ -79,7 +116,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY년 MM월 DD일")
         description
       }
     }

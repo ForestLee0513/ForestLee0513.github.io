@@ -54,6 +54,7 @@ const MenuButton = styled.button`
   position: relative;
   padding: 0;
   margin: 0;
+  color: #000000;
 
   &:after {
     content: "";
@@ -77,6 +78,11 @@ const MenuButton = styled.button`
 const StyledLink = styled(Link)`
   font-family: "Noto Serif KR", serif;
   line-height: 1.5;
+  color: #000000;
+
+  &:after {
+    background-color: #000000;
+  }
 `
 
 // 메뉴 Link 스타일
@@ -105,6 +111,10 @@ const MenuLink = styled(Link)`
   ${props => (props.toggle === "false" ? "opacity: 0" : "")};
   transition: 0.4s opacity;
   line-height: 1.3;
+  color: #000000;
+  &:after {
+    background-color: #000000;
+  }
 `
 
 const Header = () => {

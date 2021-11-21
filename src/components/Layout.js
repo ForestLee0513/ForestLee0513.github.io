@@ -44,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Noto Serif KR', serif;
     margin-bottom: 20px;
     line-height: 1.3;
-    word-break: keep-all;
+    word-break: break-all;
   }
 
   h1 {
@@ -74,6 +74,7 @@ const GlobalStyle = createGlobalStyle`
   // Paragraph Style
   p {
     font-family: 'Noto Sans KR', sans-serif;
+    line-height:1.5;
   }
 
   // Anchor global styles
@@ -81,6 +82,7 @@ const GlobalStyle = createGlobalStyle`
     color: inherit;
     text-decoration: none;
     position : relative;
+    color: #555555;
   }
 
   a:after {
@@ -91,7 +93,7 @@ const GlobalStyle = createGlobalStyle`
     height: 2px;
     bottom: 0px;
     left: 0;
-    background-color: #000000;
+    background-color: #555555;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
