@@ -40,8 +40,10 @@ const Title = styled.div`
   p {
     font-family: "Noto Serif KR", serif;
     display: inline-block;
+    user-select: none;
   }
   font-size: 2.986rem;
+  user-select: none;
   line-height: 1.5;
 `
 
@@ -49,6 +51,7 @@ const InnerTitleContainer = styled.b`
   float: left;
   overflow: hidden;
   position: relative;
+  user-select: none;
   @media only screen and (max-width: 768px) {
     height: 62px;
   }
