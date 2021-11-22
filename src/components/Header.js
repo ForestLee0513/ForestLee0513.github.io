@@ -55,6 +55,7 @@ const MenuButton = styled.button`
   padding: 0;
   margin: 0;
   color: #000000;
+  user-select: none;
 
   &:after {
     content: "";
@@ -79,6 +80,7 @@ const StyledLink = styled(Link)`
   font-family: "Noto Serif KR", serif;
   line-height: 1.5;
   color: #000000;
+  user-select: none;
 
   &:after {
     background-color: #000000;
@@ -112,8 +114,14 @@ const MenuLink = styled(Link)`
   transition: 0.4s opacity;
   line-height: 1.3;
   color: #000000;
+  user-select: none;
+
   &:after {
     background-color: #000000;
+    transform: scaleX(0);
+  }
+  &:hover:after {
+    transform: scaleX(1);
   }
 `
 
