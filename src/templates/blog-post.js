@@ -18,10 +18,74 @@ const StyledArticle = styled.article`
     color: #858585;
   }
 
+  // 이미지
   .gatsby-resp-image-wrapper {
     margin-top: 20px;
     margin-bottom: 20px;
     max-width: 700px !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+    a:after {
+      width: 0;
+    }
+
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+  }
+
+  // break 된 paragraph의 하단 간격
+  p {
+    margin-bottom: 0.8rem;
+  }
+
+  // Block Quote
+  blockquote {
+    border-left: 0.25rem solid #c9e95d;
+    color: #555555;
+    font-style: italic;
+    margin-left: calc(1.5rem * -1);
+    margin-right: 2rem;
+    padding: 0 0 0 1.5rem;
+    font-size: 1.2rem;
+
+    @media only screen and (max-width: 768px) {
+      margin-left: 0;
+      padding: 0 0 0 1rem;
+    }
+  }
+
+  // Bold
+  strong {
+    font-weight: 700;
+  }
+
+  // Italic
+  em {
+    font-style: italic;
+  }
+
+  // List
+  ul {
+    list-style-image: none;
+    list-style-position: outside;
+    margin-bottom: 0.8rem;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    list-style-type: disc;
+
+    li {
+      display: list-item;
+      margin-bottom: 0.2rem;
+    }
+  }
+
+  // code block
+  .gatsby-highlight {
+    margin-bottom: 0.8rem;
   }
 `
 
