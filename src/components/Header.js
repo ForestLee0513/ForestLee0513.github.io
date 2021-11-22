@@ -59,22 +59,14 @@ const MenuButton = styled.button`
   color: #000000;
   user-select: none;
 
-  &:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(1);
-    height: 2px;
-    bottom: 0px;
-    left: 0;
-    background-color: #000000;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-
-  &:hover:after {
-    transform: scaleX(0);
-    transform-origin: bottom left;
+  text-decoration: none;
+  background-image: linear-gradient(#000000, #000000);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  transition: background-size 0.3s;
+  &:hover {
+    background-size: 0% 2px;
   }
 `
 
@@ -83,10 +75,7 @@ const StyledLink = styled(Link)`
   line-height: 1.5;
   color: #000000;
   user-select: none;
-
-  &:after {
-    background-color: #000000;
-  }
+  background-image: linear-gradient(#000000, #000000);
 `
 
 // 메뉴 Link 스타일
@@ -118,12 +107,14 @@ const MenuLink = styled(Link)`
   color: #000000;
   user-select: none;
 
-  &:after {
-    background-color: #000000;
-    transform: scaleX(0);
-  }
-  &:hover:after {
-    transform: scaleX(1);
+  text-decoration: none;
+  background-image: linear-gradient(#000000, #000000);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  transition: background-size 0.3s;
+  &:hover {
+    background-size: 0% 2px;
   }
 `
 

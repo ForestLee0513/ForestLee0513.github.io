@@ -91,14 +91,15 @@ const StyledArticle = styled.article`
 
 const ArrowLink = styled(Link)`
   color: #000000;
-  &:after {
-    transform: scaleX(0);
-  }
+  text-decoration: none;
+  background-image: linear-gradient(#000000, #000000);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
 
   &:hover {
-    &:after {
-      transform: scaleX(1);
-    }
+    background-size: 100% 2px;
   }
 `
 

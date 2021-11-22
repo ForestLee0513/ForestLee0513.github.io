@@ -55,28 +55,18 @@ const GlobalStyle = createGlobalStyle`
 
   // Anchor global styles
   a {
-    color: inherit;
-    text-decoration: none;
     position : relative;
     color: #555555;
+    text-decoration: none;
+    background-image: linear-gradient(#555555, #555555);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    transition: background-size .3s;
   }
 
-  a:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(1);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #555555;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-
-  a:hover:after {
-    transform: scaleX(0);
-    transform-origin: bottom left;
+  a:hover {
+    background-size: 0% 2px;
   }
 
   .page {

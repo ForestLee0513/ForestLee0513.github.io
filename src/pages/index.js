@@ -2,6 +2,16 @@ import * as React from "react"
 import Seo from "../components/Seo"
 import styled from "styled-components"
 import indexForestImage from "../images/index-forest.jpg"
+import Footer from "../components/Footer"
+
+const IndexContainer = styled.div`
+  .index-footer {
+    position: absolute;
+    bottom: 0.2rem;
+    right: 0;
+    left: 0;
+  }
+`
 
 const IndexImageContainer = styled.div`
   width: 100%;
@@ -108,7 +118,7 @@ const InnerTitle = styled.div`
 
 const Index = () => {
   return (
-    <>
+    <IndexContainer>
       <Seo title="홈" />
       <IndexImageContainer>
         <ForestImageGroup>
@@ -131,7 +141,8 @@ const Index = () => {
           </Title>
         </ForestImageGroup>
       </IndexImageContainer>
-    </>
+      <Footer className="index-footer" />
+    </IndexContainer>
   )
 }
 

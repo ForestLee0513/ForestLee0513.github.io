@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "./Header"
+import Footer from "./Footer"
 import styled from "styled-components"
 import GlobalStyle from "./GlobalStyle"
 import { Transition, TransitionGroup } from "react-transition-group"
@@ -21,6 +22,7 @@ const MainWrapper = styled.div`
 `
 
 const Layout = ({ children, location }) => {
+  console.log(location)
   return (
     <>
       <GlobalStyle />
@@ -28,7 +30,10 @@ const Layout = ({ children, location }) => {
       <TransitionGroup component={null}>
         <Transition key={location.pathname} timeout={{ enter: 300, exit: 300 }}>
           {status => (
-            <MainWrapper className={`page ${status}`}>{children}</MainWrapper>
+            <MainWrapper className={`page ${status}`}>
+              {children}
+              {location.pathname !== "/" ? <Footer /> : ""}
+            </MainWrapper>
           )}
         </Transition>
       </TransitionGroup>
