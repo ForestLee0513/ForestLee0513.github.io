@@ -19,6 +19,10 @@ const MainWrapper = styled.div`
   @media only screen and (max-width: 768px) {
     width: 90%;
   }
+
+  &.page {
+    overflow: hidden;
+  }
 `
 
 // GlobalStyles
@@ -127,11 +131,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .page.entering {
-    top: 20px;
+    transform: translateY(-20px);
   }
 
   .page.exiting {
-    transform: translateY(-40px);
+    transform: translateY(-20px);
   }
 `
 
