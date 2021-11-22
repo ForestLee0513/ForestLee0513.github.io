@@ -8,10 +8,10 @@ const GlobalStyle = createGlobalStyle`
 
   // 기준 폰트 적용
   html, body {
-    font-size: 16px;
+    font-size: 16px !important;
 
     @media only screen and (max-width: 768px) {
-      font-size: 14px;
+      font-size: 14px !important;
     }
   }
   

@@ -13,6 +13,8 @@ const HeaderWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   z-index: 3;
+  background-color: ${props => (props.toggle === false ? "white" : "")};
+  transition: all 0.4s;
   // 모바일 일 때 좌우 간격을 20px로 조정
   @media only screen and (max-width: 768px) {
     padding: 0 20px;
@@ -135,7 +137,7 @@ const Header = () => {
 
   return (
     <>
-      <HeaderWrapper>
+      <HeaderWrapper toggle={toggle}>
         <MenuButton onClick={toggleMenu}>메뉴</MenuButton>
         <StyledLink
           to="/"
