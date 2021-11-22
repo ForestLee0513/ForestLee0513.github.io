@@ -7,9 +7,11 @@ import Footer from "../components/Footer"
 const IndexContainer = styled.div`
   .index-footer {
     position: absolute;
-    bottom: 0.2rem;
+    bottom: 1rem;
     right: 0;
     left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 `
 
