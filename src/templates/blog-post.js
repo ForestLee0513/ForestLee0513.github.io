@@ -21,6 +21,7 @@ const StyledArticle = styled.article`
   .gatsby-resp-image-wrapper {
     margin-top: 20px;
     margin-bottom: 20px;
+    max-width: 700px !important;
   }
 `
 
