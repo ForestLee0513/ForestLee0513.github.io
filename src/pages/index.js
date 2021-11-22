@@ -9,23 +9,12 @@ const IndexImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
-
-  width: 700px;
-  // 모바일 컨테이너 width 90%로 고정
-  @media only screen and (max-width: 768px) {
-    width: 90%;
-  }
-  // 해상도가 1440px 일 때 1280px로 고정
-  @media only screen and (min-width: 1440px) {
-    width: 1280px;
-  }
+  bottom: 0;
+  width: 100%;
 `
 
 const ForestImageGroup = styled.div`
