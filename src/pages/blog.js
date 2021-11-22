@@ -1,13 +1,80 @@
 import * as React from "react"
 import Seo from "../components/Seo"
+import { Link, graphql } from "gatsby"
 
-const AboutMe = () => {
+const Blog = ({ data, location }) => {
+  const posts = data.allMarkdownRemark.nodes
+
+  if (posts.length === 0) {
+    return (
+      <>
+        <Seo title="블로그" />
+        <p>
+          No blog posts found. Add markdown posts to "content/blog" (or the
+          directory you specified for the "gatsby-source-filesystem" plugin in
+          gatsby-config.js).
+        </p>
+      </>
+    )
+  }
+
   return (
     <>
-      <Seo title="자기소개" />
-      <h1>This is blog.</h1>
+      <Seo title="블로그" />
+      <ol style={{ listStyle: `none` }}>
+        {posts.map(post => {
+          const title = post.frontmatter.title || post.fields.slug
+
+          console.log(post)
+
+          return (
+            <li key={post.fields.slug}>
+              <article
+                className="post-list-item"
+                itemScope
+                itemType="http://schema.org/Article"
+              >
+                <header>
+                  <h2>
+                    <Link to={`/blog${post.fields.slug}`} itemProp="url">
+                      <span itemProp="headline">{title}</span>
+                    </Link>
+                  </h2>
+                  <small>{post.frontmatter.date}</small>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: post.frontmatter.description || post.excerpt,
+                    }}
+                    itemProp="description"
+                  />
+                </section>
+              </article>
+            </li>
+          )
+        })}
+      </ol>
     </>
   )
 }
 
-export default AboutMe
+export default Blog
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+        }
+      }
+    }
+  }
+`
