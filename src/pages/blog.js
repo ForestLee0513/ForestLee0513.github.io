@@ -2,18 +2,15 @@ import * as React from "react"
 import Seo from "../components/Seo"
 import { Link, graphql } from "gatsby"
 
-const Blog = ({ data, location }) => {
+const Blog = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
 
   if (posts.length === 0) {
     return (
       <>
         <Seo title="블로그" />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
+        <h1>블로그</h1>
+        <p>현재 글이 존재하지 않습니다.</p>
       </>
     )
   }
@@ -21,6 +18,7 @@ const Blog = ({ data, location }) => {
   return (
     <>
       <Seo title="블로그" />
+      <h1>블로그</h1>
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -70,7 +68,7 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "YYYY년 MM월 DD일")
           title
           description
         }
