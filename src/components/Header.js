@@ -112,7 +112,7 @@ const MenuLink = styled(Link)`
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
-  transition: background-size 0.3s;
+  transition: all 0.3s;
   &:hover {
     background-size: 100% 2px;
   }

@@ -137,9 +137,9 @@ const Index = () => {
                 <br />
               </InnerTitle>
             </InnerTitleContainer>
-            <p>을</p>
+            을
             <br />
-            <p>더하다</p>
+            더하다
           </Title>
         </ForestImageGroup>
       </IndexImageContainer>
