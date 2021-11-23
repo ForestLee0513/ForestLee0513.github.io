@@ -51,14 +51,15 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-family: 'Noto Sans KR', sans-serif;
     line-height:1.5;
+    color: #777777;
   }
 
   // Anchor global styles
   a {
     position : relative;
-    color: #555555;
+    color: #222222;
     text-decoration: none;
-    background-image: linear-gradient(#555555, #555555);
+    background-image: linear-gradient(#222222, #222222);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 100% 2px;

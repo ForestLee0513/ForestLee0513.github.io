@@ -23,8 +23,6 @@ const Blog = ({ data }) => {
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
-          console.log(post)
-
           return (
             <li key={post.fields.slug}>
               <article

@@ -15,7 +15,7 @@ const StyledArticle = styled.article`
   .date {
     margin-top: 10px;
     margin-bottom: 20px;
-    color: #858585;
+    color: #777777;
   }
 
   // 이미지
@@ -46,14 +46,7 @@ const StyledArticle = styled.article`
     border-left: 0.25rem solid #c9e95d;
     color: #555555;
     font-style: italic;
-    margin-left: calc(1.5rem * -1);
-    margin-right: 2rem;
-    padding: 0 0 0 1.5rem;
-
-    @media only screen and (max-width: 768px) {
-      margin-left: 0;
-      padding: 0 0 0 1rem;
-    }
+    padding: 0 0 0 1rem;
   }
 
   // Bold
@@ -71,7 +64,7 @@ const StyledArticle = styled.article`
     list-style-image: none;
     list-style-position: outside;
     margin-bottom: 0.8rem;
-    margin-left: 0;
+    margin-left: 1.2rem;
     margin-right: 0;
     display: block;
     list-style-type: disc;

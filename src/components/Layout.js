@@ -22,7 +22,6 @@ const MainWrapper = styled.div`
 `
 
 const Layout = ({ children, location }) => {
-  console.log(location)
   return (
     <>
       <GlobalStyle />
