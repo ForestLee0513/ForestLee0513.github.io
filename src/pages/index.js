@@ -13,6 +13,21 @@ const IndexContainer = styled.div`
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  position: fixed;
+  width: 100%;
+  height: calc(100% - calc(env(safe-area-inset-bottom) + 1rem));
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  // 모바일 컨테이너 width 90%로 고정
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+  }
 `
 
 const IndexImageContainer = styled.div`
