@@ -22,7 +22,7 @@ const Footer = ({ className }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Woolim lee
+          Woolim Lee
         </a>{" "}
         Built with{" "}
         <a
