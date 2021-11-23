@@ -111,10 +111,10 @@ const MenuLink = styled(Link)`
   background-image: linear-gradient(#000000, #000000);
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: 100% 2px;
+  background-size: 0% 2px;
   transition: background-size 0.3s;
   &:hover {
-    background-size: 0% 2px;
+    background-size: 100% 2px;
   }
 `
 

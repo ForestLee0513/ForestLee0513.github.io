@@ -49,7 +49,6 @@ const StyledArticle = styled.article`
     margin-left: calc(1.5rem * -1);
     margin-right: 2rem;
     padding: 0 0 0 1.5rem;
-    font-size: 1.2rem;
 
     @media only screen and (max-width: 768px) {
       margin-left: 0;
