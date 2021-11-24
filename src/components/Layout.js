@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import Header from "./Header"
 import Footer from "./Footer"
 import styled from "styled-components"
@@ -22,9 +22,23 @@ const MainWrapper = styled.div`
 `
 
 const Layout = ({ children, location }) => {
+  // 노치, 하단 바에 의해 100vh가 이상하게 적용되는 것 때문에 window.innerHeight로 높이 지정함.
+  const isBrowser = typeof window !== "undefined"
+  const [height, setHeight] = useState(isBrowser ? window.innerHeight : 0)
+
+  useEffect(() => {
+    if (!isBrowser) return
+
+    const handleResize = () => setHeight(window.innerHeight)
+    window.addEventListener("resize", handleResize)
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  })
+
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyle height={height} />
       <Header />
       <TransitionGroup component={null}>
         <Transition key={location.pathname} timeout={{ enter: 300, exit: 300 }}>
