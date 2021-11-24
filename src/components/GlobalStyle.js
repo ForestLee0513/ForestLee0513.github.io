@@ -9,12 +9,17 @@ const GlobalStyle = createGlobalStyle`
   // 기준 폰트 적용
   html, body {
     font-size: 16px !important;
-
+    height: ${window.innerHeight}px;
+    
     @media only screen and (max-width: 768px) {
       font-size: 14px !important;
     }
   }
-  
+
+  #___gatsby, div[tabindex] {
+    height: 100%;
+  }
+
   // Heading Font Styles
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif KR', serif;

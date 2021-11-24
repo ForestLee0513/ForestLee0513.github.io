@@ -8,7 +8,7 @@ import { Transition, TransitionGroup } from "react-transition-group"
 // Main Container
 const MainWrapper = styled.div`
   width: 100%;
-  height: calc(100vh - 40px);
+  height: calc(100% - 40px);
   padding-top: 40px;
   margin-left: auto;
   margin-right: auto;

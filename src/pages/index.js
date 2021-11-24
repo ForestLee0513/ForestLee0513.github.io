@@ -4,44 +4,21 @@ import styled from "styled-components"
 import indexForestImage from "../images/index-forest.jpg"
 import Footer from "../components/Footer"
 
-const IndexContainer = styled.div`
+const IndexImageContainer = styled.div`
   .index-footer {
     position: absolute;
-    bottom: 1rem;
+    bottom: 0;
     right: 0;
     left: 0;
     padding-top: 0;
     padding-bottom: 0;
   }
 
-  position: fixed;
-  width: 100%;
-  height: calc(100% - calc(env(safe-area-inset-bottom) + 1rem));
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 700px;
-  // 모바일 컨테이너 width 90%로 고정
-  @media only screen and (max-width: 768px) {
-    width: 90%;
-  }
-`
-
-const IndexImageContainer = styled.div`
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
+  height: 100%;
+  transform: translateY(-40px);
 `
 
 const ForestImageGroup = styled.div`
@@ -135,7 +112,7 @@ const InnerTitle = styled.div`
 
 const Index = () => {
   return (
-    <IndexContainer>
+    <>
       <Seo title="홈" />
       <IndexImageContainer>
         <ForestImageGroup>
@@ -157,9 +134,9 @@ const Index = () => {
             더하다
           </Title>
         </ForestImageGroup>
+        <Footer className="index-footer" />
       </IndexImageContainer>
-      <Footer className="index-footer" />
-    </IndexContainer>
+    </>
   )
 }
 
