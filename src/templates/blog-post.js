@@ -59,22 +59,6 @@ const StyledArticle = styled.article`
     font-style: italic;
   }
 
-  // List
-  ul {
-    list-style-image: none;
-    list-style-position: outside;
-    margin-bottom: 0.8rem;
-    margin-left: 1.2rem;
-    margin-right: 0;
-    display: block;
-    list-style-type: disc;
-
-    li {
-      display: list-item;
-      margin-bottom: 0.2rem;
-    }
-  }
-
   // code block
   .gatsby-highlight {
     margin-bottom: 0.8rem;
