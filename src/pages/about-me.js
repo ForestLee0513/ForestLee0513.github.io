@@ -1,80 +1,206 @@
 import * as React from "react"
 import Seo from "../components/Seo"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
+import { StaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
+// 자기소개 컨테이너
+const AboutMeContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  transform: translateY(-10px);
+  height: calc(100% + 10px);
+  @media only screen and (max-width: 768px) {
+    height: auto;
+    flex-direction: column;
+    transform: none;
+  }
+`
+
+// 자기소개 컨텐츠
+const AboutMeContent = styled.div`
+  display: block;
+  overflow: scroll;
+  margin-right: 20px;
+  width: 100%;
+  @media only screen and (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+`
+
+// 자기소개 헤더
 const AboutMeHeader = styled.div`
   display: flex;
+  margin-bottom: 0.8rem;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
   }
 `
 
+// 자기소개 소셜 링크
+const SocialIcons = styled.div`
+  margin-bottom: 0.8rem;
+  a:not(:last-child) {
+    margin-right: 0.8rem;
+  }
+`
+
+// 자기소개 텍스트
 const AboutMeHeaderText = styled.div`
   display: flex;
   flex-direction: column;
 `
 
+// 자기소개 경력 등 추가내용
 const AboutMeBody = styled.div`
+  //본문 하단 간격 추가
   p {
     margin-bottom: 0.8rem;
   }
-`
 
-const ProfileImage = styled.img`
-  width: 200px;
-  height: 250px;
-  position: relative;
-  object-fit: cover;
-  margin-right: 20px;
+  // 하단 간격 제거 클래스
+  .remove__margin-bottom {
+    margin-bottom: 0;
+  }
 `
 
 const AboutMe = () => {
   return (
-    <>
-      <Seo title="자기소개" />
-      <AboutMeHeader className="about-me">
-        <ProfileImage
-          src="https://placeimg.com/640/480/any"
-          alt="about-me-profile"
-        />
-        <AboutMeHeaderText>
-          <h1>프론트엔드 개발자 이우림입니다.</h1>
-          <p>
-            배움에 한계가 없다고 생각하며 배운 것을 기반으로 나은 서비스를
-            만들고 개선하기 위해 노력하고 있습니다.
-          </p>
-        </AboutMeHeaderText>
-      </AboutMeHeader>
-      <AboutMeBody>
-        <h2>연락처</h2>
-        <h2>사용 기술</h2>
-        <h2>경력</h2>
-        <h3>피에스알미디어</h3>
-        <h4>PICLICK 코디매니저</h4>
-        <p>
-          쇼핑몰의 상품에 코디 된 상품이 있다면 AI 이미지 매칭을 이용하여 코디
-          된 상품을 추천하는 솔루션 입니다.
-        </p>
-        <h4>PICLICK 솔루션 어드민 개발</h4>
-        <p>
-          PICLICK의 추천 솔루션을 이용하여 발생한 매출, 추천 상태를 확인하는
-          대시보드 입니다.
-        </p>
-        <h4>PICLICK 서비스 '품절 대체 솔루션' 개발</h4>
-        <p>
-          쇼핑몰의 상품이 품절 되었다면 고객에게 메시지를 보낸 뒤 교환을
-          유도하는 추천 솔루션 입니다.
-        </p>
-        <ul>
-          <li>상품 추천 페이지 개발</li>
-          <li>JavaScript 기반에서 TypeScript 기반 리팩토링</li>
-          <li>사용 기술: TypeScript, Scss, Webpack</li>
-        </ul>
-        <h2>학력</h2>
-        <h3>송파공업고등학교</h3>
-      </AboutMeBody>
-    </>
+    <StaticQuery
+      query={bioQuery}
+      render={data => {
+        // 소셜 목록(깃허브 / 페이스북 / 트위터 / 링크드인)
+        const { social } = data.site.siteMetadata
+        // 제목, 소개
+        const {
+          frontmatter: { title, description, thumbnail },
+          html,
+        } = data.allMarkdownRemark.nodes[0]
+        const remarkedThumbnail = getImage(thumbnail)
+
+        return (
+          <>
+            <Seo title="자기소개" />
+            <AboutMeContainer>
+              <GatsbyImage
+                image={remarkedThumbnail}
+                alt="profile"
+                css={css`
+                  display: block !important;
+                  max-width: 800px;
+                  width: 100%;
+                  margin-right: 20px;
+
+                  * {
+                    display: block !important;
+                    max-width: 800px;
+                    width: 100%;
+                    margin-right: 20px;
+                  }
+
+                  @media only screen and (max-width: 425px) {
+                    min-width: unset;
+                    max-width: unset;
+                    margin-left: calc(50% - 50vw);
+                    margin-right: calc(50% - 50vw);
+                    margin-top: -10px;
+                    min-height: 250px;
+                    max-height: 250px;
+                  }
+                `}
+              />
+              <AboutMeContent>
+                <AboutMeHeader className="about-me">
+                  <AboutMeHeaderText>
+                    <h1>{title}</h1>
+                    <SocialIcons>
+                      {social.github && (
+                        <a
+                          href={`https://github.com/${social.github}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          GitHub
+                        </a>
+                      )}
+                      {social.linkedin && (
+                        <a
+                          href={`https://linkedin.com/in/${social.linkedin}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          LinkedIn
+                        </a>
+                      )}
+                      {social.facebook && (
+                        <a
+                          href={`https://facebook.com/${social.facebook}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Facebook
+                        </a>
+                      )}
+                      {social.twitter && (
+                        <a
+                          href={`https://twitter.com/${social.twitter}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Twitter
+                        </a>
+                      )}
+                    </SocialIcons>
+                    <p>{description}</p>
+                  </AboutMeHeaderText>
+                </AboutMeHeader>
+                <hr />
+                <AboutMeBody dangerouslySetInnerHTML={{ __html: html }} />
+              </AboutMeContent>
+            </AboutMeContainer>
+          </>
+        )
+      }}
+    />
   )
 }
+
+const bioQuery = graphql`
+  query BioQuery {
+    site {
+      siteMetadata {
+        social {
+          twitter
+          github
+          facebook
+          linkedin
+        }
+      }
+    }
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/(__about)/" } }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        html
+        frontmatter {
+          date(formatString: "YYYY년 MM월 DD일")
+          title
+          description
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default AboutMe

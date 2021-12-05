@@ -1,32 +1,42 @@
 import { createGlobalStyle } from "styled-components"
 import reset from "styled-reset"
 
+const styled = { createGlobalStyle }
+
 // GlobalStyles
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle = styled.createGlobalStyle`
   // Reset all styles with "styled-reset"
   ${reset}
 
   // 기준 폰트 적용
   html, body {
     font-size: 16px !important;
-    height: ${props => props.height ?? 0}px;
+    /* height: ${props => (props.height ? `${props.height}px` : "0")}; */
+    height: 100%;
     color: #777777;
-    
+
     @media only screen and (max-width: 768px) {
       font-size: 14px !important;
     }
   }
 
-  #___gatsby, div[tabindex] {
+  #___gatsby,
+  div[tabindex] {
     height: 100%;
   }
 
   // Heading Font Styles
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Noto Serif KR', serif;
-    margin-bottom: 20px;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Noto Serif KR", serif;
+    margin-bottom: 0.8rem;
     line-height: 1.3;
-    word-break: break-all;
+    word-break: keep-all;
+    word-wrap: break-word;
     color: #000000;
   }
 
@@ -41,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     font-size: 1.728rem;
   }
-  
+
   h4 {
     font-size: 1.44rem;
   }
@@ -56,24 +66,25 @@ const GlobalStyle = createGlobalStyle`
 
   // Paragraph Style
   p {
-    font-family: 'Noto Sans KR', sans-serif;
-    line-height:1.5;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 1.5;
+    color: #777777;
   }
 
   // Anchor global styles
   a {
-    position : relative;
+    position: relative;
     color: #222222;
     text-decoration: none;
     background-image: linear-gradient(#222222, #222222);
     background-position: 0% 100%;
     background-repeat: no-repeat;
-    background-size: 100% 2px;
-    transition: background-size .3s;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
   }
 
   a:hover {
-    background-size: 0% 2px;
+    background-size: 100% 2px;
   }
 
   // 페이지 애니메이션
@@ -86,7 +97,7 @@ const GlobalStyle = createGlobalStyle`
     position: relative;
     opacity: 1;
   }
-  
+
   .page.entering,
   .page.exiting {
     opacity: 0;
@@ -94,7 +105,7 @@ const GlobalStyle = createGlobalStyle`
     top: 0px;
     right: 0;
     bottom: 0;
-    left: 0; 
+    left: 0;
     margin-left: auto;
     margin-right: auto;
     width: 700px;
@@ -113,13 +124,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   // 리스트
-  
+
   // List
   ul {
     list-style-image: none;
     list-style-position: outside;
     margin-bottom: 0.8rem;
-    margin-left: 1.2rem;
+    margin-left: 2rem;
     margin-right: 0;
     display: block;
     list-style-type: disc;
@@ -127,9 +138,9 @@ const GlobalStyle = createGlobalStyle`
     li {
       display: list-item;
       margin-bottom: 0.2rem;
+      line-height: 1.5;
     }
   }
-
 `
 
 export default GlobalStyle

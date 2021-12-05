@@ -5,20 +5,12 @@ import indexForestImage from "../images/index-forest.jpg"
 import Footer from "../components/Footer"
 
 const IndexImageContainer = styled.div`
-  .index-footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100%;
-  transform: translateY(-40px);
+  color: #000000;
 `
 
 const ForestImageGroup = styled.div`

@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { useScrollPosition } from "../hooks/useScrollPosition"
 
 const HeaderWrapper = styled.div`
   position: fixed;
@@ -13,7 +14,8 @@ const HeaderWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   z-index: 3;
-  background-color: ${props => (props.toggle === false ? "white" : "")};
+  background-color: ${props =>
+    props.scrollPosition > 40 && !props.$toggle ? "white" : ""};
   transition: all 0.4s;
   // 모바일 일 때 좌우 간격을 20px로 조정
   @media only screen and (max-width: 768px) {
@@ -33,7 +35,9 @@ const MenuContainer = styled.div`
   bottom: 0;
   // 메뉴 토글 애니메이션
   transition: 0.8s transform;
+  transition-delay: ${props => (props.toggle ? "" : "1s")};
   transform: ${props => (props.toggle ? "translateY(0)" : "translateY(-100%)")};
+
   transform-origin: 100% 0;
   // 배경
   background-color: #f7f7f7;
@@ -63,10 +67,10 @@ const MenuButton = styled.button`
   background-image: linear-gradient(#000000, #000000);
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: 100% 2px;
+  background-size: 0% 2px;
   transition: background-size 0.3s;
   &:hover {
-    background-size: 0% 2px;
+    background-size: 100% 2px;
   }
 `
 
@@ -83,13 +87,22 @@ const MenuLink = styled(Link)`
   @keyframes fade-in {
     0%,
     20% {
-      opacity: 0;
-      top: 50px;
+      clip-path: inset(100% 0 0 0);
     }
     80%,
     100% {
-      opacity: 1;
-      top: 0px;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  @keyframes fade-out {
+    0%,
+    20% {
+      clip-path: inset(0 0 0 0);
+    }
+    80%,
+    100% {
+      clip-path: inset(0 0 100% 0);
     }
   }
 
@@ -100,25 +113,24 @@ const MenuLink = styled(Link)`
   display: inline;
   position: relative;
   animation: ${props =>
-    props.toggle === "true" ? `fade-in ${props.delay}s` : ""};
-  ${props => (props.toggle === "false" ? "opacity: 0" : "")};
-  transition: 0.4s opacity;
+    props.$toggle
+      ? `fade-in ${props.$delay}s forwards`
+      : `fade-out ${props.$delay}s forwards`};
+  clip-path: ${props =>
+    props.$toggle ? `inset(100% 0 0 0)` : "inset(0 0 0 0)"};
+  animation-delay: ${props => (props.$toggle ? `0.5s` : "0")};
   line-height: 1.3;
   color: #000000;
   user-select: none;
-
   text-decoration: none;
   background-image: linear-gradient(#000000, #000000);
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: all 0.3s;
-  &:hover {
-    background-size: 100% 2px;
-  }
 `
 
 const Header = () => {
+  // 스크롤 위치
+  const scrollPosition = useScrollPosition()
   // 메뉴 토글 제어
   const [toggle, setToggle] = useState(false)
 
@@ -128,7 +140,7 @@ const Header = () => {
 
   return (
     <>
-      <HeaderWrapper toggle={toggle}>
+      <HeaderWrapper toggle={toggle} scrollPosition={scrollPosition}>
         <MenuButton onClick={toggleMenu}>메뉴</MenuButton>
         <StyledLink
           to="/"
@@ -141,36 +153,23 @@ const Header = () => {
       </HeaderWrapper>
       <MenuContainer toggle={toggle}>
         <MenuLink
-          toggle={toggle.toString()}
+          $toggle={toggle}
           onClick={toggleMenu}
-          delay={1}
+          $delay={0.5}
           to="/about-me"
         >
           자기소개
         </MenuLink>
-        <MenuLink
-          toggle={toggle.toString()}
-          onClick={toggleMenu}
-          delay={1.2}
-          to="/blog"
-        >
+        <MenuLink $toggle={toggle} onClick={toggleMenu} $delay={1} to="/blog">
           블로그
         </MenuLink>
         <MenuLink
-          toggle={toggle.toString()}
+          $toggle={toggle}
           onClick={toggleMenu}
-          delay={1.4}
+          $delay={1.5}
           to="/portfolio"
         >
           작업물
-        </MenuLink>
-        <MenuLink
-          toggle={toggle.toString()}
-          onClick={toggleMenu}
-          delay={1.6}
-          to="/contact"
-        >
-          연락
         </MenuLink>
       </MenuContainer>
     </>
