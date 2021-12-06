@@ -22,7 +22,7 @@ const AboutMeContainer = styled.div`
 // 자기소개 컨텐츠
 const AboutMeContent = styled.div`
   display: block;
-  overflow: scroll;
+  overflow-y: scroll;
   margin-right: 20px;
   width: 100%;
   @media only screen and (max-width: 768px) {
