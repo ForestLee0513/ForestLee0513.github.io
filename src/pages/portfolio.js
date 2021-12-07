@@ -1,13 +1,27 @@
 import * as React from "react"
 import Seo from "../components/Seo"
+import { graphql } from "gatsby"
+import List from "../components/List"
+import styled from "styled-components"
 import Footer from "../components/Footer"
-import { Link, graphql } from "gatsby"
+
+const PortfolioContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`
 
 const Portfolio = ({ data }) => {
-  console.log(data)
+  const portfolioItems = data.allMarkdownRemark.nodes
+
   return (
     <>
       <Seo title="작업물" />
+      <PortfolioContainer>
+        <List items={portfolioItems} />
+        <Footer />
+      </PortfolioContainer>
     </>
   )
 }

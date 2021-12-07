@@ -3,7 +3,7 @@ import { throttle } from "../utils/throttle"
 
 export const useScrollPosition = () => {
   const isBrowser = typeof window !== "undefined"
-  const [position, setPosition] = useState(isBrowser ? window.scrollY : 0)
+  const [position, setPosition] = useState(0)
 
   const setScrollPosition = useCallback(() => {
     throttle(() => {
@@ -14,9 +14,12 @@ export const useScrollPosition = () => {
   useEffect(() => {
     if (!isBrowser) return
 
+    setPosition(window.scrollY)
     window.addEventListener("scroll", setScrollPosition)
 
+    // cleanup
     return () => {
+      setPosition(0)
       window.removeEventListener("scroll", setScrollPosition)
     }
   }, [isBrowser, setScrollPosition])

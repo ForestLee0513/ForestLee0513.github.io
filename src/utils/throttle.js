@@ -4,7 +4,7 @@ export const throttle = (callback, delay) => {
   if (!timer) {
     timer = setTimeout(() => {
       callback()
-      timer = null
+      clearTimeout(timer)
     }, delay)
   }
 }
