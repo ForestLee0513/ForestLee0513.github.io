@@ -9,28 +9,32 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import defaultImage from "../images/meta-image.png"
 
 const Seo = ({ description, lang, meta, title, image }) => {
-  const { site } = useStaticQuery(
+  const { site, file } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
             description
+            siteUrl
             social {
               twitter
             }
           }
+        }
+        file(absolutePath: { regex: "/(src/images/meta-image.png)/" }) {
+          publicURL
         }
       }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const siteURL = site.siteMetadata.siteUrl
   const defaultTitle = site.siteMetadata?.title
-  const metaImage = image || defaultImage
+  const metaImage = image || `${siteURL}${file.publicURL}`
 
   return (
     <Helmet
