@@ -134,6 +134,7 @@ const List = ({ items }) => {
                   max-width: 200px;
                   min-height: 250px;
                   max-height: 250px;
+                  margin-bottom: 10px;
                 `}
               />
               <h3>{title}</h3>
