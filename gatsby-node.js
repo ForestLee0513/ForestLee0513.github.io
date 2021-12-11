@@ -6,9 +6,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const portfolioDetail = path.resolve(`./src/templates/portfolio-detail.js`)
 
-  // Get all markdown blog posts sorted by date
-  const result = await graphql(
+  // 블로그 생성
+  const blogQuery = await graphql(
     `
       {
         allMarkdownRemark(
@@ -27,24 +28,25 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
   )
 
-  if (result.errors) {
+  if (blogQuery.errors) {
     reporter.panicOnBuild(
       `There was an error loading your blog posts`,
-      result.errors
+      blogQuery.errors
     )
     return
   }
 
-  const posts = result.data.allMarkdownRemark.nodes
+  const blogPosts = blogQuery.data.allMarkdownRemark.nodes
 
-  // Create blog posts pages
+  // Create blog blogPosts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
 
-  if (posts.length > 0) {
-    posts.forEach((post, index) => {
-      const previousPostId = index === 0 ? null : posts[index - 1].id
-      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+  if (blogPosts.length > 0) {
+    blogPosts.forEach((post, index) => {
+      const previousPostId = index === 0 ? null : blogPosts[index - 1].id
+      const nextPostId =
+        index === blogPosts.length - 1 ? null : blogPosts[index + 1].id
 
       createPage({
         path: `/blog${post.fields.slug}`,
@@ -53,6 +55,47 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           id: post.id,
           previousPostId,
           nextPostId,
+        },
+      })
+    })
+  }
+
+  // 포트폴리오 생성
+  const portfolioQuery = await graphql(
+    `
+      {
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: ASC }
+          limit: 1000
+          filter: { fileAbsolutePath: { regex: "/(portfolio)/" } }
+        ) {
+          nodes {
+            id
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    `
+  )
+
+  if (portfolioQuery.errors) {
+    reporter.panicOnBuild(
+      `There was an error loading your portfolio posts`,
+      portfolioQuery.errors
+    )
+    return
+  }
+
+  const portfolioDetails = portfolioQuery.data.allMarkdownRemark.nodes
+  if (portfolioDetails.length > 0) {
+    portfolioDetails.forEach((post, index) => {
+      createPage({
+        path: `/portfolio${post.fields.slug}`,
+        component: portfolioDetail,
+        context: {
+          id: post.id,
         },
       })
     })
@@ -110,6 +153,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
+      tags: [String]
     }
 
     type Fields {
