@@ -3,6 +3,7 @@ import Seo from "../components/Seo"
 import styled, { css } from "styled-components"
 import { StaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Footer from "../components/Footer"
 
 // 자기소개 컨테이너
 const AboutMeContainer = styled.div`
@@ -13,6 +14,8 @@ const AboutMeContainer = styled.div`
   transform: translateY(-10px);
   height: calc(100% + 10px);
   @media only screen and (max-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
     height: auto;
     flex-direction: column;
     transform: none;
@@ -23,12 +26,15 @@ const AboutMeContainer = styled.div`
 const AboutMeContent = styled.div`
   display: block;
   overflow-y: scroll;
-  margin-right: 20px;
-  width: 100%;
+  padding-right: 20px;
+  height: 90%;
+  margin-top: auto;
+  margin-bottom: auto;
   @media only screen and (max-width: 768px) {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    padding-right: 0;
+    overflow: unset;
   }
 `
 
@@ -91,25 +97,18 @@ const AboutMe = () => {
                 alt="profile"
                 css={css`
                   display: block !important;
-                  max-width: 800px;
+                  max-width: 600px;
                   width: 100%;
                   margin-right: 20px;
+                  height: 90%;
+                  margin-top: auto;
+                  margin-bottom: auto;
 
-                  * {
-                    display: block !important;
-                    max-width: 800px;
-                    width: 100%;
-                    margin-right: 20px;
-                  }
-
-                  @media only screen and (max-width: 425px) {
-                    min-width: unset;
-                    max-width: unset;
-                    margin-left: calc(50% - 50vw);
-                    margin-right: calc(50% - 50vw);
-                    margin-top: -10px;
+                  @media only screen and (max-width: 768px) {
                     min-height: 250px;
                     max-height: 250px;
+                    margin-top: 0;
+                    margin-bottom: 10px;
                   }
                 `}
               />
