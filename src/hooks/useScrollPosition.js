@@ -1,14 +1,11 @@
 import { useState, useEffect, useCallback } from "react"
-import { throttle } from "../utils/throttle"
 
 export const useScrollPosition = () => {
   const isBrowser = typeof window !== "undefined"
   const [position, setPosition] = useState(0)
 
   const setScrollPosition = useCallback(() => {
-    throttle(() => {
-      setPosition(window.scrollY)
-    }, 200)
+    setPosition(window.scrollY)
   }, [])
 
   useEffect(() => {
