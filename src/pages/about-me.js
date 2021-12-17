@@ -1,9 +1,8 @@
 import * as React from "react"
 import Seo from "../components/Seo"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import { StaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import Footer from "../components/Footer"
+import { useScrollPosition } from "../hooks/useScrollPosition"
 
 // 자기소개 컨테이너
 const AboutMeContainer = styled.div`
@@ -13,12 +12,39 @@ const AboutMeContainer = styled.div`
   margin-right: calc(50% - 50vw);
   transform: translateY(-10px);
   height: calc(100% + 10px);
+  padding-left: 20px;
+  padding-right: 20px;
   @media only screen and (max-width: 768px) {
     margin-left: 0;
     margin-right: 0;
     height: auto;
     flex-direction: column;
     transform: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+`
+
+// 자기소개 이미지
+const AboutMeImage = styled.div`
+  display: block !important;
+  max-width: 500px;
+  width: 100%;
+  margin-right: 20px;
+  height: 90%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-image: url(${props => props.src});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media only screen and (max-width: 768px) {
+    height: 200px;
+    max-width: unset;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    background-size: 100%;
   }
 `
 
@@ -35,6 +61,7 @@ const AboutMeContent = styled.div`
     margin-right: auto;
     padding-right: 0;
     overflow: unset;
+    width: 100%;
   }
 `
 
@@ -75,6 +102,8 @@ const AboutMeBody = styled.div`
 `
 
 const AboutMe = () => {
+  const scrollPosition = useScrollPosition()
+
   return (
     <StaticQuery
       query={bioQuery}
@@ -86,31 +115,17 @@ const AboutMe = () => {
           frontmatter: { title, description, thumbnail },
           html,
         } = data.allMarkdownRemark.nodes[0]
-        const remarkedThumbnail = getImage(thumbnail)
 
         return (
           <>
             <Seo title="자기소개" />
             <AboutMeContainer>
-              <GatsbyImage
-                image={remarkedThumbnail}
-                alt="profile"
-                css={css`
-                  display: block !important;
-                  max-width: 600px;
-                  width: 100%;
-                  margin-right: 20px;
-                  height: 90%;
-                  margin-top: auto;
-                  margin-bottom: auto;
-
-                  @media only screen and (max-width: 768px) {
-                    min-height: 250px;
-                    max-height: 250px;
-                    margin-top: 0;
-                    margin-bottom: 10px;
-                  }
-                `}
+              <AboutMeImage
+                src={thumbnail.publicURL}
+                alt="about-me__thumbnail"
+                style={{
+                  backgroundPosition: `50% ${50 + scrollPosition * -0.1}%`,
+                }}
               />
               <AboutMeContent>
                 <AboutMeHeader className="about-me">
@@ -192,9 +207,7 @@ const bioQuery = graphql`
           title
           description
           thumbnail {
-            childImageSharp {
-              gatsbyImageData
-            }
+            publicURL
           }
         }
       }
