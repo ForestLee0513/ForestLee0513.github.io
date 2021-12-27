@@ -120,7 +120,7 @@ const GlobalStyle = styled.createGlobalStyle`
   }
 
   .page.exiting {
-    transform: translateY(-20px);
+    opacity: 0;
   }
 
   // 리스트
