@@ -20,9 +20,12 @@ const ListContainer = styled.ul`
 `
 
 const ListItem = styled.li`
+  @media only screen and (max-width: 768px) {
+    width: 200px;
+  }
+  width: 300px;
   display: flex;
   flex-direction: column;
-  width: 200px;
   margin-left: 20px;
   padding: 10px;
   transition: all 0.4s;
@@ -129,11 +132,18 @@ const List = ({ items }) => {
                 image={thumbnail}
                 alt={title}
                 css={css`
+                  @media only screen and (max-width: 768px) {
+                    min-width: 200px;
+                    max-width: 200px;
+                    min-height: 250px;
+                    max-height: 250px;
+                  }
+
                   display: block !important;
-                  min-width: 200px;
-                  max-width: 200px;
-                  min-height: 250px;
-                  max-height: 250px;
+                  min-width: 300px;
+                  max-width: 300px;
+                  min-height: 350px;
+                  max-height: 350px;
                   margin-bottom: 10px;
                 `}
               />

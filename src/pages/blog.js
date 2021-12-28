@@ -79,6 +79,7 @@ const Blog = ({ data }) => {
                 itemScope
                 itemType="http://schema.org/Article"
               >
+                <h5>{index < 10 ? `0${index + 1}` : index + 1}</h5>
                 <header>
                   {thumbnail && (
                     <GatsbyImage
@@ -86,9 +87,8 @@ const Blog = ({ data }) => {
                       alt={`${post.frontmatter.title}-${index}`}
                       css={css`
                         display: block;
-                        width: calc(100% + 20px);
                         height: 100%;
-                        transform: translate(-10px, -10px);
+                        margin-bottom: 10px;
                       `}
                     />
                   )}
