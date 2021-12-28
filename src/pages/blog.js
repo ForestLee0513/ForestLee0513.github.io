@@ -3,7 +3,6 @@ import Seo from "../components/Seo"
 import { Link, graphql } from "gatsby"
 import styled, { css } from "styled-components"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import Footer from "../components/Footer"
 
 const BlogListContainer = styled.div`
   width: calc(100% - 20px);
@@ -53,8 +52,17 @@ const Blog = ({ data }) => {
     return (
       <>
         <Seo title="블로그" />
-        <h1>블로그</h1>
-        <p>현재 글이 존재하지 않습니다.</p>
+        <div
+          style={{
+            display: "flex",
+            width: "100%",
+            height: "100%",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <p>현재 글이 존재하지 않습니다.</p>
+        </div>
       </>
     )
   }
@@ -110,7 +118,6 @@ const Blog = ({ data }) => {
           )
         })}
       </BlogListContainer>
-      <Footer />
     </>
   )
 }

@@ -115,6 +115,24 @@ const List = ({ items }) => {
     }
   }, [horizontalScroll])
 
+  if (items.length === 0) {
+    return (
+      <>
+        <div
+          style={{
+            display: "flex",
+            width: "100%",
+            height: "100%",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <p>개제된 포트폴리오가 존재하지 않습니다.</p>
+        </div>
+      </>
+    )
+  }
+
   return (
     <ListContainer ref={listRef} $isScroll={isScroll} $isBrowser={isBrowser}>
       {items.map((item, index) => {
