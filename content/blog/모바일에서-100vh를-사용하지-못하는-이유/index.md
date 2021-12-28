@@ -17,7 +17,7 @@ thumbnail: ./thumbnail.png
 
 ## env() / constant()의 문제점
 
-![mobile-view-example](https://images.velog.io/images/nomorebuild/post/c49aa0be-6cac-4ead-a34b-31c82b7f3a16/mobile-view-example.png)
+![mobile-view-example](mobile-view-example.png)
 
 스크롤이 생겨도 상관없는 페이지라면 그대로 사용해도 괜찮지만 상단의 이미지와 같이 스크롤이 **_절대로_** 생기면 안 되는 페이지라면 env도 사실상 무용지물 일 때도 있습니다.
 
@@ -110,7 +110,7 @@ export default App
 
 만약 2-1에서 작성한 코드가 잘 적용됐다면 resize 할 때마다 window의 내부 크기를 가져와 적용하게 되는데, 이 방식은 `SSR` 기반에서는 사용이 불가능합니다.
 
-![gatsby-error-example](https://images.velog.io/images/nomorebuild/post/337e4ada-c25d-45b4-beee-f15572a50c04/gatsby-error-example.png)
+![gatsby-error-example](gatsby-error-example.png)
 
 그 이유는 위 이미지와 같이(Gatsby 빌드 시) window의 객체가 없다는 에러가 발생하게 되는데, 이러한 경우에는 window의 객체가 있는지 확인 후 객체가 없다면 해당 useEffect를 중단하는 형식으로 작성하면 된다.
 
