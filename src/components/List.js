@@ -20,7 +20,7 @@ const ListContainer = styled.ul`
 `
 
 const ListItem = styled.li`
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1200px) {
     width: 200px;
   }
   width: 300px;
@@ -59,7 +59,7 @@ const ListItem = styled.li`
     margin-bottom: 0;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1200px) {
     &:first-of-type {
       margin-left: 20px;
     }
@@ -133,7 +133,7 @@ const List = ({ items }) => {
                 image={thumbnail}
                 alt={title}
                 css={css`
-                  @media only screen and (max-width: 768px) {
+                  @media only screen and (max-width: 1200px) {
                     min-width: 200px;
                     max-width: 200px;
                     min-height: 250px;
@@ -150,13 +150,18 @@ const List = ({ items }) => {
               />
               <h3>{title}</h3>
               <p>{date}</p>
-              <ListHairline />
-              {tags.map((tag, index) => {
-                if (index > 4) return ""
+              {tags && <ListHairline />}
+              {tags &&
+                tags.map((tag, index) => {
+                  if (index > 4) return ""
 
-                return <TagText key={`${tag}-${index}`}>#{tag}</TagText>
-              })}
-              {tags.length > 5 ? <TagText>외 {tags.length - 5}개</TagText> : ""}
+                  return <TagText key={`${tag}-${index}`}>#{tag}</TagText>
+                })}
+              {tags && tags.length > 5 ? (
+                <TagText>외 {tags.length - 5}개</TagText>
+              ) : (
+                ""
+              )}
             </Link>
           </ListItem>
         )

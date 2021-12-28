@@ -3,11 +3,11 @@ import Seo from "../components/Seo"
 import { graphql } from "gatsby"
 import List from "../components/List"
 import styled from "styled-components"
-import Footer from "../components/Footer"
 
 const PortfolioContainer = styled.div`
   width: 100%;
-  height: 100%;
+  height: calc(100% + 50px);
+  transform: translateY(-50px);
   display: flex;
   flex-direction: column;
 `
@@ -20,7 +20,6 @@ const Portfolio = ({ data }) => {
       <Seo title="작업물" />
       <PortfolioContainer>
         <List items={portfolioItems} />
-        <Footer />
       </PortfolioContainer>
     </>
   )

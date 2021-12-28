@@ -28,6 +28,19 @@ const ArrowLink = styled(Link)`
   }
 `
 
+const TagText = styled.p`
+  margin-right: 4px;
+  display: inline-flex;
+`
+
+const ListHairline = styled.hr`
+  width: 15%;
+  margin-left: 0;
+  border: none;
+  height: 1px;
+  background-color: black;
+`
+
 const Arrow = styled.img`
   margin-right: 10px;
   margin-top: 2px;
@@ -39,7 +52,7 @@ const Arrow = styled.img`
 
 const PortfolioDetail = ({ data }) => {
   const {
-    frontmatter: { title, description, date, thumbnail },
+    frontmatter: { title, description, date, thumbnail, tags },
     excerpt,
     html,
   } = data.markdownRemark
@@ -62,7 +75,13 @@ const PortfolioDetail = ({ data }) => {
       <header>
         <h1 className="headline">{title}</h1>
         <p className="date">{date}</p>
+        {tags &&
+          tags.map((tag, index) => {
+            return <TagText key={`${tag}-${index}`}>#{tag}</TagText>
+          })}
+        <ListHairline />
       </header>
+      <div dangerouslySetInnerHTML={{ __html: html }}></div>
     </>
   )
 }
@@ -85,6 +104,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "YYYY년 MM월 DD일")
         description
+        tags
         thumbnail {
           publicURL
         }
