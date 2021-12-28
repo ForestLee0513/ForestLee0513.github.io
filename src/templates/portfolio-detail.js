@@ -34,7 +34,7 @@ const TagText = styled.p`
 `
 
 const ListHairline = styled.hr`
-  width: 15%;
+  width: 50px;
   margin-left: 0;
   border: none;
   height: 1px;
@@ -81,7 +81,10 @@ const PortfolioDetail = ({ data }) => {
           })}
         <ListHairline />
       </header>
-      <div dangerouslySetInnerHTML={{ __html: html }}></div>
+      <section
+        dangerouslySetInnerHTML={{ __html: html }}
+        itemProp="articleBody"
+      />
     </>
   )
 }

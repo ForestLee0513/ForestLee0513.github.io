@@ -118,6 +118,14 @@ const Arrow = styled.img`
       : ""};
 `
 
+const ListHairline = styled.hr`
+  width: 50px;
+  margin-left: 0;
+  border: none;
+  height: 1px;
+  background-color: black;
+`
+
 const BlogPostTemplate = ({ data }) => {
   const {
     frontmatter: { title, description, date, thumbnail },
@@ -148,6 +156,7 @@ const BlogPostTemplate = ({ data }) => {
         <header>
           <h1 className="headline">{title}</h1>
           <p className="date">{date}</p>
+          <ListHairline />
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: html }}
