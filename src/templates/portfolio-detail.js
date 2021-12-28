@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import styled from "styled-components"
 import arrowImage from "../images/arrow.svg"
+import Seo from "../components/Seo"
 
 const ArrowLink = styled(Link)`
   color: #000000;
@@ -37,13 +38,31 @@ const Arrow = styled.img`
 `
 
 const PortfolioDetail = ({ data }) => {
+  const {
+    frontmatter: { title, description, date, thumbnail },
+    excerpt,
+    html,
+  } = data.markdownRemark
+  const {
+    siteMetadata: { siteUrl },
+  } = data.site
+
   return (
     <>
+      <Seo
+        title={title}
+        description={description || excerpt}
+        image={`${siteUrl}${thumbnail?.publicURL}` || ""}
+      />
+
       <ArrowLink to="/portfolio" className="move-to-list">
         <Arrow src={arrowImage} alt="arrow" />
         목록으로 이동
       </ArrowLink>
-      <div>test</div>
+      <header>
+        <h1 className="headline">{title}</h1>
+        <p className="date">{date}</p>
+      </header>
     </>
   )
 }

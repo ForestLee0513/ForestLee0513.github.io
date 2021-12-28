@@ -81,6 +81,7 @@ const ListHairline = styled.hr`
 const TagText = styled.span`
   color: #777777;
   margin-right: 4px;
+  display: inline-flex;
 `
 
 // 포트폴리오용 리스트 랜더링
@@ -150,9 +151,12 @@ const List = ({ items }) => {
               <h3>{title}</h3>
               <p>{date}</p>
               <ListHairline />
-              {tags.map((tag, index) => (
-                <TagText key={`${tag}-${index}`}>#{tag}</TagText>
-              ))}
+              {tags.map((tag, index) => {
+                if (index > 4) return ""
+
+                return <TagText key={`${tag}-${index}`}>#{tag}</TagText>
+              })}
+              {tags.length > 5 ? <TagText>외 {tags.length - 5}개</TagText> : ""}
             </Link>
           </ListItem>
         )
