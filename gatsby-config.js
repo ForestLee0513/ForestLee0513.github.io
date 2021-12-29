@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `이우림`,
-    siteUrl: `https://nomorebuild.github.io`,
+    siteUrl: `https://forestlee0513.github.io`,
     description: `안녕하세요, 프론트엔드 엔지니어 이우림입니다.`,
     social: {
       github: `nomorebuild`,
