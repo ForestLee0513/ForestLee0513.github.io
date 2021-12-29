@@ -4,8 +4,7 @@ module.exports = {
     siteUrl: `https://forestlee0513.github.io`,
     description: `안녕하세요, 프론트엔드 엔지니어 이우림입니다.`,
     social: {
-      github: `nomorebuild`,
-      linkedin: `woolimlee0513`,
+      github: `forestlee0513`,
     },
   },
   flags: {

@@ -32,7 +32,7 @@ const Footer = ({ className }) => {
       <p>
         ©
         <a
-          href="https://github.com/nomorebuild"
+          href="https://github.com/forestlee0513"
           target="_blank"
           rel="noopener noreferrer"
         >
