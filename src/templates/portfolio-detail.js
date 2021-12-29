@@ -33,14 +33,6 @@ const TagText = styled.p`
   display: inline-flex;
 `
 
-const ListHairline = styled.hr`
-  width: 50px;
-  margin-left: 0;
-  border: none;
-  height: 1px;
-  background-color: black;
-`
-
 const Arrow = styled.img`
   margin-right: 10px;
   margin-top: 2px;
@@ -79,7 +71,6 @@ const PortfolioDetail = ({ data }) => {
           tags.map((tag, index) => {
             return <TagText key={`${tag}-${index}`}>#{tag}</TagText>
           })}
-        <ListHairline />
       </header>
       <section
         dangerouslySetInnerHTML={{ __html: html }}
