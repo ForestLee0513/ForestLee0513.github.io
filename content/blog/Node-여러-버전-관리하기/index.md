@@ -1,7 +1,7 @@
 ---
 title: "Node 여러 버전 관리하기"
 description: "n 혹은 nvm으로 node.js 버전을 관리해보자."
-date: "2021-11-25"
+date: "2021-12-29"
 thumbnail: ./thumbnail.png
 ---
 
