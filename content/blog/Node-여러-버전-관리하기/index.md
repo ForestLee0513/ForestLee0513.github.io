@@ -46,7 +46,7 @@ nvm은 npm에서 설치하는 n과 다르게 프로그램 설치를 별도로 �
 
 설치 파일은 Github 레파지토리 내 [Releases](https://github.com/coreybutler/nvm-windows/releases)에서 받을 수 있는데, Releases에 접근하면 아래와 같이 파일들이 나열될 것입니다.
 
-![nvm-assets](./nvm-assets)
+![nvm-assets](./nvm-assets.png)
 
 여기서 noinstall(무설치), 설치 파일, 소스코드 등이 있지만 저는 install 할 때마다 버전 충돌이 생길 것을 대비해서 이번엔 installer 버전으로 설치를 했습니다.
 
