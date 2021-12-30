@@ -87,7 +87,6 @@ const Blog = ({ data }) => {
                 itemScope
                 itemType="http://schema.org/Article"
               >
-                <h5>{index < 10 ? `0${index + 1}` : index + 1}</h5>
                 <header>
                   {thumbnail && (
                     <GatsbyImage
