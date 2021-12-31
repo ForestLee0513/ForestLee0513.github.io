@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 import Seo from "../components/Seo"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import arrowImage from "../images/arrow.svg"
 import Footer from "../components/Footer"
 
@@ -111,7 +111,7 @@ const ArrowLink = styled(Link)`
 
 const Arrow = styled.img`
   margin-right: 10px;
-  margin-top: 2px;
+  margin-top: 5px;
   ${props =>
     props.direction === "right"
       ? "transform: translateX(6px) rotate(180deg)"
@@ -141,8 +141,20 @@ const BlogPostTemplate = ({ data }) => {
         itemScope
         itemType="http://schema.org/Article"
       >
-        <ArrowLink to="/blog" className="move-to-list">
-          <Arrow src={arrowImage} alt="arrow" />
+        <ArrowLink
+          to="/blog"
+          className="move-to-list"
+          css={css`
+            padding-bottom: 3px;
+          `}
+        >
+          <Arrow
+            src={arrowImage}
+            alt="arrow"
+            css={`
+              margin-top: 0px;
+            `}
+          />
           목록으로 이동
         </ArrowLink>
         <header>
