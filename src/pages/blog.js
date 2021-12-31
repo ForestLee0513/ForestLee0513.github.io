@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const BlogListContainer = styled.div`
   width: calc(100% - 20px);
-  column-count: 2;
+  column-count: 3;
   column-gap: 30px;
 
   @media only screen and (max-width: 768px) {
