@@ -86,7 +86,7 @@ Usage:
 ```powershell
 Downloading node.js version 14.18.1 (64-bit)...
 Complete
-Creating C:\Users\PSR Media\AppData\Roaming\nvm\temp
+Creating C:\Users\MyUser\AppData\Roaming\nvm\temp
 
 Downloading npm version 6.14.15... Complete
 Installing npm v6.14.15...
