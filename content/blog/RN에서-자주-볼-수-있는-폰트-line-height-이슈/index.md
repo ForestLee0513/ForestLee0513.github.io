@@ -78,7 +78,7 @@ import styled from "styled-components/native";
 const styled.Text`
   font-family: "Spoqa_Han_Sans_Neo"; // import된 원하는 커스텀 폰트 추가
   font-size: 24px; // styled-components적용 시 단위를 작성해야합니다.
-	include-font-padding: false;
+  include-font-padding: false;
 `
 
 function MyApp() {
@@ -103,7 +103,7 @@ export default MyApp;
  "compilerOptions": {
     "jsx": "react",
     "strict": true,
-	  // plugin 추가 후 validProperties에 기존 CSS와 동일한 규칙으로 추가
+    // plugin 추가 후 validProperties에 기존 CSS와 동일한 규칙으로 추가
     "plugins": [
       {
         "name": "typescript-styled-plugin",
