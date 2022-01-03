@@ -95,6 +95,7 @@ const ArrowLink = styled(Link)`
   transition: background-size 0.3s;
   display: flex;
   align-items: flex-start;
+  word-break: keep-all;
 
   &:hover {
     background-size: 100% 2px;
@@ -178,7 +179,13 @@ const BlogPostTemplate = ({ data }) => {
         </li>
         <li className="next-item">
           {next && (
-            <ArrowLink to={`/blog${next.fields.slug}`} rel="next">
+            <ArrowLink
+              to={`/blog${next.fields.slug}`}
+              rel="next"
+              css={css`
+                text-align: right;
+              `}
+            >
               {next.frontmatter.title}{" "}
               <Arrow src={arrowImage} alt="arrow" direction="right" />
             </ArrowLink>
