@@ -122,7 +122,7 @@ export default MyApp;
 
 ## 마지막으로...
 
-line-height가 OS 별로 다르다보니 렌더링이 이상하게 되는 문제는 Text에서만 그러는 것이 아닌 마찬가지로 폰트를 사용하는 TextInput 등에서도 동일한 문제가 발견합니다.
+line-height가 OS 별로 다르다보니 렌더링이 이상하게 되는 문제는 Text에서만 그러는 것이 아닌 마찬가지로 폰트를 사용하는 TextInput 등에서도 동일한 문제가 발생합니다.
 
 만약 TextInput에서 커스텀 폰트를 적용하고 아래와 같이 위아래로 스크롤이 생긴 것처럼 출력된다면 Android만 line-height를 적용한다면 해결될 것입니다.
 
