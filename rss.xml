@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[이우림]]></title><description><![CDATA[안녕하세요, 프론트엔드 엔지니어 이우림입니다.]]></description><link>https://forestlee0513.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 06 Jan 2022 14:44:03 GMT</lastBuildDate><item><title><![CDATA[프론트엔드 엔지니어 이우림 입니다.]]></title><description><![CDATA[연락처 / URL 메일: woolimlee.dev@gmail.com 사용 기술 프론트엔드 언어 JavaScript TypeScript HTML CSS 프론트엔드 프레임워크 / 라이브러리 React Sass(Scss) node gulp Webpack…]]></description><link>https://forestlee0513.github.io/about-me/</link><guid isPermaLink="false">https://forestlee0513.github.io/about-me/</guid><content:encoded>&lt;h2&gt;연락처 / URL&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;메일: &lt;a href=&quot;mailto:woolimlee.dev@gmail.com&quot;&gt;woolimlee.dev@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;사용 기술&lt;/h2&gt;
+&lt;h3&gt;프론트엔드 언어&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;JavaScript&lt;/li&gt;
+&lt;li&gt;TypeScript&lt;/li&gt;
+&lt;li&gt;HTML&lt;/li&gt;
+&lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;프론트엔드 프레임워크 / 라이브러리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;React&lt;/li&gt;
+&lt;li&gt;Sass(Scss)&lt;/li&gt;
+&lt;li&gt;node&lt;/li&gt;
+&lt;li&gt;gulp&lt;/li&gt;
+&lt;li&gt;Webpack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;경력&lt;/h2&gt;
+&lt;h3&gt;피에스알미디어 (프론트엔드 엔지니어)&lt;/h3&gt;
+&lt;p&gt;2020.11 ~&lt;/p&gt;
+&lt;h4&gt;PICLICK 코디매니저&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;2021.07 ~ 2021.08&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;쇼핑몰의 상품에 코디 된 상품이 있다면 AI 이미지 매칭을 이용하여 코디 된 상품을 추천하는 솔루션 입니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;픽클릭 코디 추천솔루션 “코디매니저” 프론트엔드 개발&lt;/li&gt;
+&lt;li&gt;사용 기술: TypeScript, Scss, Webpack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;PICLICK 솔루션 어드민 개발&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;2021.01 ~ 2021.03&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;PICLICK의 추천 솔루션을 이용하여 발생한 매출, 추천 상태를 확인하는 대시보드 입니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PHP 기반 코드에서 React 기반 코드 리팩토링&lt;/li&gt;
+&lt;li&gt;Github Action를 활용하여 AWS S3 자동 배포 CI / CD 적용&lt;/li&gt;
+&lt;li&gt;사용 기술: React, JavaScript, Scss&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;PICLICK 서비스 ‘품절 대체 솔루션’ 개발&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;2020.11 ~ 2021.01&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;쇼핑몰의 상품이 품절 되었다면 고객에게 메시지를 보낸 뒤 교환을 유도하는 추천 솔루션 입니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;상품 추천 페이지 개발&lt;/li&gt;
+&lt;li&gt;JavaScript 기반에서 TypeScript 기반 리팩토링&lt;/li&gt;
+&lt;li&gt;사용 기술: TypeScript, Scss, Webpack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;학력&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;2018.03 ~ 2021.02&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;송파공업고등학교(모바일 전자과)&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;2020.11 ~ 2021.01&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.piclick.me/&quot;&gt;피에스알미디어&lt;/a&gt;에서 Front-end Developer 직군 실습 후 정규직 전환&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[RN에서 자주 볼 수 있는 폰트 line-height 이슈]]></title><description><![CDATA[line-height 적용 전 이슈 만약 커스텀 폰트를 적용해서 line-height를 자동으로 변경되게 한다면, OS / 기기 해상도 별로 높이가 달라져서 의도한 결과가 나오지 않는데 inspector를 열어서 보면 padding…]]></description><link>https://forestlee0513.github.io/RN에서-자주-볼-수-있는-폰트-line-height-이슈/</link><guid isPermaLink="false">https://forestlee0513.github.io/RN에서-자주-볼-수-있는-폰트-line-height-이슈/</guid><pubDate>Mon, 03 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;line-height 적용 전 이슈&lt;/h2&gt;
+&lt;p&gt;만약 커스텀 폰트를 적용해서 line-height를 자동으로 변경되게 한다면, OS / 기기 해상도 별로 높이가 달라져서 의도한 결과가 나오지 않는데 inspector를 열어서 보면 padding 값은 정상으로 출력 됐습니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 405px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1289748c23f5198391dbff71f120d072/1d180/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-ios-%EB%B9%84%EA%B5%90.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 101.8987341772152%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADjklEQVQ4y5WUbUxbVRiA71ZKIJSyiIpxP9QtmpjMZIhL6qaEWQEZ2XAKGrYpc/uhLhKFAaNAFQNYoJQCssI6wMhQGIyPafxhYhZEsYARdVmyAaV0TJ2wUr6/aR/TWwaSqatv8uS8OefNc9+Te84RgoIewMtLiq+vLzKZjICAABG5XI6fnww/Pz8eengbCQlv0NrcxqVv2lEoFNwfdB+B995DZGQk7Zc6OGusQqHYjRAYGIhEIkXqJUWyWeJGImHzpk0IgiDiJfUiNzufXzvN/Px9H9YrowxdHsH8y03GrPM4JoB5UKVlIWg0GlpbW6iuqeLb9na6u7sxmUwiXV1ddH7XyevHD3FiXx6G3cNod13GqBym5fgYjYdvUR3xOxVhQ9S+YONYdCpCTUU9136w0fO1BVs/TFhg3OIe7WZY+gMyMjN5U5nLmZ3jlDwxjH7HIIZnLZwJu4F+hxXd4xYMO0dJiEhBUB+qQxc6Ro5ikOyn+imMGESzdwB1cB/qkKvkhPxGfFQib4fnUrR1hLytA+Q/2kdJsJWykOsUPTZE3oNmih/5k9f2piBkH6uj4qCNoigz+v2DnH7VSmX8DUoOWCmOtmCIuUX8vkQ+eLeQXoODjuIxTEYbvbVT/FQ7Rc/ZSTp0Y/RWLpF4NB3h/aPnKI+2UaA0ow03U/KihfKXr1MUOUTB84OURY0Q99w7GIyluMO5PqymtxO1Wo2giq9FFzbKh4p+8pXXKI2xit1pwy3kPD2ANvQmL4WeoLRMDyswa19mYdK5gTn7CixDRnoWQmVhI1e/AlO9nZ6mCX5smlyjq2GcK184eCshGb1eL3YxP7nC4rRzA645V5OZqiyEtrY2d9NOB/8WqgwVOu26cGmGNe4QNja0iIUz48ssTDk3MDfhLkxLTfdc2NTQLBbOTS6zOOtkcWad+akVcS0lORVtfpGHHdZf2CBcmkXk78KTSSkUaLSeCc/XN91VmPx/hPWfNa4LZ/55y8lJJz0Xfl53fvWnLLIw7VjDJXN9xBVJ7yV7Lmxuch8blrjzBqzOpaWeQvNRoWfncM+eZ4iLfUXkwP4YYmPj1vIjh48QFxvHtu3bKSspBwdM2xdEwW1cu5ixL4o3RRQKwvpD+l+c/riCu4XqVAZCwJYteEul+Pj4IJf7r+HvL8Pb21tE5i9HqYykoa6R1gsXMVZWodeVilQbP+Fiy5d8WnOO4Cd38Rc1Pci17MpBSgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;iOS와 Android의 line-height 차이&quot;
+        title=&quot;iOS와 Android의 line-height 차이&quot;
+        src=&quot;/static/1289748c23f5198391dbff71f120d072/1d180/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-ios-%EB%B9%84%EA%B5%90.png&quot;
+        srcset=&quot;/static/1289748c23f5198391dbff71f120d072/c26ae/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-ios-%EB%B9%84%EA%B5%90.png 158w,
+/static/1289748c23f5198391dbff71f120d072/6bdcf/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-ios-%EB%B9%84%EA%B5%90.png 315w,
+/static/1289748c23f5198391dbff71f120d072/1d180/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-ios-%EB%B9%84%EA%B5%90.png 405w&quot;
+        sizes=&quot;(max-width: 405px) 100vw, 405px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;iOS와 Android의 line-height 차이&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 219px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/57cd93ea50175aa38e3e61753c9830eb/e52b4/ios-%EC%A0%95%EC%83%81.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 187.9746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,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&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;iOS의 Inspector&quot;
+        title=&quot;iOS의 Inspector&quot;
+        src=&quot;/static/57cd93ea50175aa38e3e61753c9830eb/e52b4/ios-%EC%A0%95%EC%83%81.png&quot;
+        srcset=&quot;/static/57cd93ea50175aa38e3e61753c9830eb/c26ae/ios-%EC%A0%95%EC%83%81.png 158w,
+/static/57cd93ea50175aa38e3e61753c9830eb/e52b4/ios-%EC%A0%95%EC%83%81.png 219w&quot;
+        sizes=&quot;(max-width: 219px) 100vw, 219px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;iOS의 Inspector&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 232px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2f8f9753236327c988d2798e6f47aa17/6a451/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%B9%84%EC%A0%95%EC%83%81.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 177.8481012658228%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,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&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Android의 Inspector&quot;
+        title=&quot;Android의 Inspector&quot;
+        src=&quot;/static/2f8f9753236327c988d2798e6f47aa17/6a451/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%B9%84%EC%A0%95%EC%83%81.png&quot;
+        srcset=&quot;/static/2f8f9753236327c988d2798e6f47aa17/c26ae/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%B9%84%EC%A0%95%EC%83%81.png 158w,
+/static/2f8f9753236327c988d2798e6f47aa17/6a451/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%B9%84%EC%A0%95%EC%83%81.png 232w&quot;
+        sizes=&quot;(max-width: 232px) 100vw, 232px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Android의 Inspector&lt;/p&gt;
+&lt;p&gt;하지만 공통적으로 텍스트 하단이 띄워진 것을 보면 padding이 자동으로 적용된 듯싶어서 공식 문서를 본 뒤 아래와 같이 솔루션을 적용해 봤습니다.&lt;/p&gt;
+&lt;h2&gt;includeFontPadding 제거&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;line-height&lt;/code&gt;으로 해결이 됐다면 좋겠지만 고정된 &lt;code class=&quot;language-text&quot;&gt;line-height&lt;/code&gt;으로 인해 Android에서 텍스트가 위로 잘리는 현상이 발생합니다.&lt;/p&gt;
+&lt;p&gt;이러한 현상이 발생하는 이유는 Android는 폰트에서 기본으로 적용된 &lt;code class=&quot;language-text&quot;&gt;padding&lt;/code&gt;을 적용하는데 이때 폰트 기본 적용 &lt;code class=&quot;language-text&quot;&gt;padding&lt;/code&gt;을 남기고 텍스트 자체의 &lt;code class=&quot;language-text&quot;&gt;line-height&lt;/code&gt;만 적용하여 위로 밀리고 그대로 텍스트가 잘리는 현상이 발생하는 것입니다.&lt;/p&gt;
+&lt;p&gt;물론 Text 컴포넌트에 &lt;code class=&quot;language-text&quot;&gt;padding&lt;/code&gt; 값을 주어 텍스트가 잘리는 문제를 일부 해결할 수 있으나, 치수를 항상 직접 계산해야 하고 정확하게 해결할 수 있는 방법이 아니라서 개인적으로 불편했습니다.&lt;/p&gt;
+&lt;p&gt;그래서 이번에는 RN에서 제공하는 Style 속성 중에서 Android에서만 적용 가능한 &lt;code class=&quot;language-text&quot;&gt;includeFontPadding&lt;/code&gt;을 살펴보는데, iOS에서는 이러한 속성을 제공하지 않으니 넘어가도 좋습니다.&lt;/p&gt;
+&lt;p&gt;이제 폰트에 스타일을 적용할 차례인데 RN의 StyleSheet을 만들어서 스타일 속성을 추가하고 있다면 아래와 같이 적용하면 됩니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; React &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; SafeAreaView&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Text&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; StyleSheet &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react-native&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;MyApp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;SafeAreaView&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Text&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;style&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;textStyle&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;안녕하세요!!!&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Text&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;SafeAreaView&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 폰트는 이미 import 했다는 전제 조건으로 예제를 작성했습니다.&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; style &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; StyleSheet&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  textStyle&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    fontFamily&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Spoqa_Han_Sans_Neo&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// import된 원하는 커스텀 폰트 추가&lt;/span&gt;
+    includeFontPadding&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 추가! - Android만 적용&lt;/span&gt;
+    fontSize&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; MyApp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;만약 styled-component를 통해 제작하고 있다면 아쉽게도 styled-component를 통해서 속성 추가가 불가능합니다.&lt;/p&gt;
+&lt;p&gt;그 이유는 typescript-styled-plugin에서 includeFontPadding, tintColor 등 RN에서만 사용되는 속성이 기본적으로 대응되지 않아서 생기는 증상입니다.&lt;/p&gt;
+&lt;p&gt;하지만 별도의 설정을 거친다면 적용할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/microsoft/typescript-styled-plugin/issues/58&quot;&gt;typescript-styled-plugin에서 존재하지 않는 속성 추가하는 방법&lt;/a&gt; 참고 후 위에서 styled-component로 컴포넌트를 만들어서 진행하시면 됩니다.&lt;/p&gt;
+&lt;h3&gt;MyApp.tsx (컴포넌트)&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; React &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; SafeAreaView&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; StyleSheet &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react-native&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; styled &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;styled-components/native&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// styled-components 적용&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; StyledText &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; styled&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Text&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+  font-family: &quot;Spoqa_Han_Sans_Neo&quot;; /* import된 원하는 커스텀 폰트 추가 */
+  font-size: 24px; /* styled-components적용 시 단위를 작성해야 합니다. */
+  include-font-padding: false; /* 별도의 설정을 거치지 않았다면 없는 속성으로 출력됩니다. (하단 tsconfig.json 참고)*/
+&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;MyApp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// 폰트는 이미 import 했다는 전제 조건으로 예제를 작성했습니다.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;SafeAreaView&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;StyledText&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;안녕하세요!!!&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;StyledText&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;SafeAreaView&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; MyApp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;tsconfig.json&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;
+ &lt;span class=&quot;token string&quot;&gt;&quot;compilerOptions&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;jsx&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;strict&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// plugin 추가 후 validProperties에 기존 CSS와 동일한 규칙으로 추가&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;plugins&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;typescript-styled-plugin&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&quot;lint&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&quot;validProperties&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+						&lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;
+            &lt;span class=&quot;token string&quot;&gt;&quot;include-font-padding&quot;&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+ &lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;마지막으로…&lt;/h2&gt;
+&lt;p&gt;line-height가 OS 별로 다르다보니 렌더링이 이상하게 되는 문제는 Text에서만 그러는 것이 아닌 마찬가지로 폰트를 사용하는 TextInput 등에서도 동일한 문제가 발생합니다.&lt;/p&gt;
+&lt;p&gt;만약 TextInput에서 커스텀 폰트를 적용하고 아래와 같이 위아래로 스크롤이 생긴 것처럼 출력된다면 Android만 line-height를 적용한다면 해결될 것입니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/24eba2f0e982018651daab4f42436250/%EC%9D%B8%ED%92%8B-%EC%8A%A4%ED%81%AC%EB%A1%A4.gif&quot; alt=&quot;화면 기록 2021-12-29 오후 10.39.09.gif&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Node 여러 버전 관리하기]]></title><description><![CDATA[⚠️ 참고사항
+NVM이나 n을 설치하여 node의 버전을 관리한다면, 기존 node를 완전히 삭제 후 설치해야 합니다.
+만약 node를 재설치 하지 않고 NVM이나 n을 받게 되면 전역으로 설치했던 패키지 혹은 기존에 설치된 node…]]></description><link>https://forestlee0513.github.io/Node-여러-버전-관리하기/</link><guid isPermaLink="false">https://forestlee0513.github.io/Node-여러-버전-관리하기/</guid><pubDate>Wed, 29 Dec 2021 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;⚠️ &lt;strong&gt;참고사항&lt;/strong&gt;
+NVM이나 n을 설치하여 node의 버전을 관리한다면, 기존 node를 완전히 삭제 후 설치해야 합니다.
+만약 node를 재설치 하지 않고 NVM이나 n을 받게 되면 전역으로 설치했던 패키지 혹은 기존에 설치된 node에서 충돌이 발생할 수 있으므로 &lt;a href=&quot;https://stackoverflow.com/questions/20711240/how-to-completely-remove-node-js-from-windows&quot;&gt;Windows에서 Node.js를 완전히 삭제하는 방법&lt;/a&gt;과 &lt;a href=&quot;https://stackoverflow.com/questions/11177954/how-do-i-completely-uninstall-node-js-and-reinstall-from-beginning-mac-os-x?rq=1&quot;&gt;MacOS에서 Node.js를 완전히 삭제하는 방법&lt;/a&gt;을 참고하시면 됩니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;이슈 발견&lt;/h2&gt;
+&lt;p&gt;이 글을 작성할 당시 React Native 프로젝트에서 graphql을 설치하던 도중 아래와 같이 버전 이슈가 발생했습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;&lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;error graphql@16&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;0: The engine &lt;span class=&quot;token string&quot;&gt;&quot;node&quot;&lt;/span&gt; is incompatible with this module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; Expected version &lt;span class=&quot;token string&quot;&gt;&quot;^12.22.0 || ^14.16.0 || &gt;=16.0.0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; Got &lt;span class=&quot;token string&quot;&gt;&quot;14.15.1&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;물론 node를 지우고 다시 해당 버전에 맞게 재설치 하는 것도 방법이지만, 이러한 버전 문제가 자주 발생할 것 같아 더 좋은 방법이 있는지 찾아보게 되었습니다&lt;/p&gt;
+&lt;h2&gt;n 사용 (Linux, Mac OS)&lt;/h2&gt;
+&lt;p&gt;n을 사용하여 노드 버전을 여러 가지로 손쉽게 변경할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;먼저 설치 방법을 보자면 우리가 평소에 패키지를 설치하는 것처럼 &lt;code class=&quot;language-text&quot;&gt;npm install -g n&lt;/code&gt; 이라고 입력하면 설치는 끝났지만 설치가 안 됐다면 &lt;a href=&quot;https://github.com/tj/n&quot;&gt;공식 문서&lt;/a&gt;에서 Brew 등 여러 설치법이 있으니 참고하면 됩니다.&lt;/p&gt;
+&lt;p&gt;만약 설치가 끝났다면 터미널에 &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt; 을 입력하고 아래와 같은 결과가 나온다면 정상적으로 설치된 상태입니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;&lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;$ n
+ο node&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;8&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;11&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이제 &lt;code class=&quot;language-text&quot;&gt;n &amp;lt;버전&gt;&lt;/code&gt; 을 입력하면 해당 버전의 node.js를 설치하고 적용하게 됩니다.&lt;/p&gt;
+&lt;p&gt;설치를 마쳤다면 이제 node.js를 여러 버전으로 사용할 수 있는데, 만약 버전을 변경하고 싶다면 &lt;code class=&quot;language-text&quot;&gt;n use &amp;lt;버전&gt;&lt;/code&gt; 명령어로 변경하고 &lt;code class=&quot;language-text&quot;&gt;n rm &amp;lt;버전&gt;&lt;/code&gt;으로 해당 버전의 node.js를 삭제할 수 있습니다.&lt;/p&gt;
+&lt;h2&gt;NVM (Windows)&lt;/h2&gt;
+&lt;p&gt;Linux, Mac OS에서는 n을 사용해도 됐지만 안타깝게도 WSL(Windows Subsystem for Linux)를 제외한 Windows 터미널(cmd, powershell, git bash, Cygwin 등)에서 n을 사용할 수 없습니다.&lt;/p&gt;
+&lt;p&gt;그래도 다행히 Windows에서도 n과 비슷한 기능을 하는 버전 매니저인 &lt;a href=&quot;https://github.com/coreybutler/nvm-windows&quot;&gt;nvm-windows&lt;/a&gt;가 있습니다.&lt;/p&gt;
+&lt;p&gt;nvm은 npm에서 설치하는 n과 다르게 프로그램 설치를 별도로 해야 합니다.&lt;/p&gt;
+&lt;p&gt;설치 파일은 Github 레파지토리 내 &lt;a href=&quot;https://github.com/coreybutler/nvm-windows/releases&quot;&gt;Releases&lt;/a&gt;에서 받을 수 있는데, Releases에 접근하면 아래와 같이 파일들이 나열될 것입니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6cfd9c787b42154340c477f0126e4755/d43b4/nvm-assets.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 27.21518987341772%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAf0lEQVQY06XQQQ7CIBCF4TmAbYGhAx1bgaZq4sYumuj9L/YM3kBc/NsvL49EC2S5Y5CEzobmBp5gvII4Fvj1AOcdVm/oWX/GTkZgZcY4JdCoK2R7gdMTJpSmdRV0MkM0g3wFr29w2mHihs7GJtD4MzhcQC5m8PL4Yr2Lf/1Y+wA5dns518hdTQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;nvm-assets&quot;
+        title=&quot;nvm-assets&quot;
+        src=&quot;/static/6cfd9c787b42154340c477f0126e4755/f058b/nvm-assets.png&quot;
+        srcset=&quot;/static/6cfd9c787b42154340c477f0126e4755/c26ae/nvm-assets.png 158w,
+/static/6cfd9c787b42154340c477f0126e4755/6bdcf/nvm-assets.png 315w,
+/static/6cfd9c787b42154340c477f0126e4755/f058b/nvm-assets.png 630w,
+/static/6cfd9c787b42154340c477f0126e4755/40601/nvm-assets.png 945w,
+/static/6cfd9c787b42154340c477f0126e4755/d43b4/nvm-assets.png 1202w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;여기서 noinstall(무설치), 설치 파일, 소스코드 등이 있지만 저는 install 할 때마다 버전 충돌이 생길 것을 대비해서 이번엔 installer 버전으로 설치를 했습니다.&lt;/p&gt;
+&lt;p&gt;만약 설치됐다면 이제 Powershell이나 cmd에서 실행이 가능한데 &lt;code class=&quot;language-text&quot;&gt;nvm&lt;/code&gt; 명령어를 치고 실행하면 아래와 비슷한 출력이 나오게 됩니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;&lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;Running version 1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;9&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+Usage:
+
+  nvm arch                     : Show &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; node is running in 32 or 64 bit mode&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  nvm current                  : Display active version&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  nvm install &amp;lt;version&gt; &lt;span class=&quot;token namespace&quot;&gt;[arch]&lt;/span&gt; : The version can be a specific version&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;latest&quot;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; the latest current version&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; or &lt;span class=&quot;token string&quot;&gt;&quot;lts&quot;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; the
+                                 most recent LTS version&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; Optionally specify whether to install the 32 or 64 bit version &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;defaults
+                                 to system arch&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Set&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;[arch]&lt;/span&gt; to &lt;span class=&quot;token string&quot;&gt;&quot;all&quot;&lt;/span&gt; to install 32 AND 64 bit versions&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+                                 Add &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;insecure to the &lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt; of this command to bypass SSL validation of the remote download server&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  nvm list &lt;span class=&quot;token namespace&quot;&gt;[available]&lt;/span&gt;         : List the node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;js installations&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;available&quot;&lt;/span&gt; at the &lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt; to see what can be installed&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; Aliased as &lt;span class=&quot;token function&quot;&gt;ls&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  nvm on                       : Enable node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;js version management&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  nvm off                      : Disable node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;js version management&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  nvm proxy &lt;span class=&quot;token namespace&quot;&gt;[url]&lt;/span&gt;              : &lt;span class=&quot;token function&quot;&gt;Set&lt;/span&gt; a proxy to use &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; downloads&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; Leave &lt;span class=&quot;token namespace&quot;&gt;[url]&lt;/span&gt; blank to see the current proxy&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+                                 &lt;span class=&quot;token function&quot;&gt;Set&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;[url]&lt;/span&gt; to &lt;span class=&quot;token string&quot;&gt;&quot;none&quot;&lt;/span&gt; to remove the proxy&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  nvm node_mirror &lt;span class=&quot;token namespace&quot;&gt;[url]&lt;/span&gt;        : &lt;span class=&quot;token function&quot;&gt;Set&lt;/span&gt; the node mirror&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; Defaults to https:&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;nodejs&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;org&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;dist&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; Leave &lt;span class=&quot;token namespace&quot;&gt;[url]&lt;/span&gt; blank to use default url&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  nvm npm_mirror &lt;span class=&quot;token namespace&quot;&gt;[url]&lt;/span&gt;         : &lt;span class=&quot;token function&quot;&gt;Set&lt;/span&gt; the npm mirror&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; Defaults to https:&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;github&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;com&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;npm&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cli&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;archive&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; Leave &lt;span class=&quot;token namespace&quot;&gt;[url]&lt;/span&gt; blank to default url&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  nvm uninstall &amp;lt;version&gt;      : The version must be a specific version&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  nvm use &lt;span class=&quot;token namespace&quot;&gt;[version]&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;[arch]&lt;/span&gt;     : &lt;span class=&quot;token keyword&quot;&gt;Switch&lt;/span&gt; to use the specified version&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; Optionally use &lt;span class=&quot;token string&quot;&gt;&quot;latest&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;lts&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; or &lt;span class=&quot;token string&quot;&gt;&quot;newest&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+                                 &lt;span class=&quot;token string&quot;&gt;&quot;newest&quot;&lt;/span&gt; is the latest installed version&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; Optionally specify 32&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;64bit architecture&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+                                 nvm use &amp;lt;arch&gt; will &lt;span class=&quot;token keyword&quot;&gt;continue&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;using&lt;/span&gt; the selected version&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; but &lt;span class=&quot;token keyword&quot;&gt;switch&lt;/span&gt; to 32&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;64 bit mode&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  nvm root &lt;span class=&quot;token namespace&quot;&gt;[path]&lt;/span&gt;              : &lt;span class=&quot;token function&quot;&gt;Set&lt;/span&gt; the directory where nvm should store different versions of node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;js&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+                                 &lt;span class=&quot;token keyword&quot;&gt;If&lt;/span&gt; &amp;lt;path&gt; is not &lt;span class=&quot;token function&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; the current root will be displayed&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  nvm version                  : Displays the current running version of nvm &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; Windows&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; Aliased as v&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이제 node 버전을 변경하기 전 설치를 해야 하는데 &lt;code class=&quot;language-text&quot;&gt;nvm install &amp;lt;버전&gt;&lt;/code&gt;을 입력해서 설치하면 됩니다.&lt;/p&gt;
+&lt;p&gt;그럼 설치가 제대로 진행됐다면 아래와 같이 출력이 나오는데 이제 &lt;code class=&quot;language-text&quot;&gt;nvm use &amp;lt;버전&gt;&lt;/code&gt;을 입력하여 해당 버전을 설치하면 됩니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;&lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;Downloading node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;js version 14&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;18&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;1 &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;64&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;bit&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+Complete
+Creating C:\Users\MyUser\AppData\Roaming\nvm\temp
+
+Downloading npm version 6&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;14&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;15&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; Complete
+Installing npm v6&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;14&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;15&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+Installation complete&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;If&lt;/span&gt; you want to use this version&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;type&lt;/span&gt;
+
+nvm use 14&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;18&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;만약 PC에 설치된 node 버전이 무엇인지 확인하고 싶다면 &lt;code class=&quot;language-text&quot;&gt;nvm list&lt;/code&gt;를 입력하여 확인 후 &lt;code class=&quot;language-text&quot;&gt;nvm use&lt;/code&gt; 명령어로 적용하면 됩니다.&lt;/p&gt;
+&lt;p&gt;단, 관리자 권한이 제공되지 않았을 경우 &lt;code class=&quot;language-text&quot;&gt;nvm use&lt;/code&gt;를 사용할 수 없으니 이 점 참고하시면 됩니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[모바일에서 100vh를 사용하지 못하는 이유]]></title><description><![CDATA[정말 모바일에서는 100vh를 사용 못 하나요? 제목에서 “사용하지 못하는 이유”라고 작성했지만 모바일에서도 는 사용 가능합니다. 하지만, 정상적으로 동작하는 PC와 달리 모바일은 Notch, Home indicator…]]></description><link>https://forestlee0513.github.io/모바일에서-100vh를-사용하지-못하는-이유/</link><guid isPermaLink="false">https://forestlee0513.github.io/모바일에서-100vh를-사용하지-못하는-이유/</guid><pubDate>Thu, 25 Nov 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;정말 모바일에서는 100vh를 사용 못 하나요?&lt;/h2&gt;
+&lt;p&gt;제목에서 “사용하지 못하는 이유”라고 작성했지만 모바일에서도 &lt;code class=&quot;language-text&quot;&gt;100vh&lt;/code&gt;는 사용 가능합니다.&lt;/p&gt;
+&lt;p&gt;하지만, 정상적으로 동작하는 PC와 달리 모바일은 Notch, Home indicator 등 실제 높이에 비해 사용할 수 있는 높이가 모두 다릅니다.&lt;/p&gt;
+&lt;p&gt;그래서 Apple에서도 이러한 문제를 개선하기 위해 Safe Area라는 환경 변수를 제공하는데, css에서 사용할 때는 &lt;code class=&quot;language-text&quot;&gt;env()&lt;/code&gt; 와 &lt;code class=&quot;language-text&quot;&gt;constant()&lt;/code&gt;를 사용하면 됩니다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;constant()&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;env()&lt;/code&gt;와 흡사하지만 iOS 11.0을 대응하기 위한 환경 변수입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;env() / constant()의 문제점&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/20cbdb0d03b958bf6f3d22cf40edeb57/105d8/mobile-view-example.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 216.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAArCAYAAAB4pah1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFG0lEQVRIx7WW2U9UWRCH+1+EvksjjMsMzBBxTAZEQYFhwhb/BdmeeOJREx8EEhMDBLdEQUVZBQRxV6RZ/U2+aqq5F40zJjOdFOfec6q+U8s5dclI0vb2tjY2NvTp0ycbv3z5on/67e3tKZ/PazOfV35jQ1v5vM1n+PP27Vs9ePBAU1NTmp+f1+7uri1+C+xzb9680bNnz7SwuKiVmRmtr60VgCiw21GjfyMpmwM78/D27dtaWVmxhf39ff3Iz8FPnz7V58+fC8CdnZ2vvPzRH/ZFDzc3N60Y5I4FRhc28/mkEAkjtu/fv7eCFovy8uVLra6u2iIVp3ouhMHIPPCkbG1tGYgCAWUTA7548cImk4pJaBLmXu/sFEacYFMYrFmV8fDdu3cGQsm9TL47FCOeWcMrUkV0CwsLlgIDQk8C3Ytvhckc68DcbmlpSTMzM7ZuIT9//lyvXr1KhXcYWjpUNuUZz7BZW1vT4uKiZmdnzdaATLBAPpKhHq22h05oAF+/fm3Q5eVluzVfAb0IAD20JPBohYGtr6/bdU0BSSjCEfj48aONyUIczSEw5MOHD1pdXTMYN8WAFAUYSaXaeEooGHOukveWd68yI3rk7vHjxyZFIEUBSi6oHGFwtrx6GKJDZRFPAbo4gc6TJ08OgXNzcyYY0SQ4VyR9cHBQAwMDunXrlj2Pjo7q6tWrtoZxIeRVCxcgaSh6yC4F6JKFjdGdO3d08+ZN8+LevXuamJjQ0NCQrXEiAC4vr1gOU0CqTKXIB2ESsp8xPPD77FfNGwJAnHn06JGmp6cLQJINDA8BAvezdePGDV2/fl3Dw8M23r17V2NjYwahyyPopYrixwaXraUvLJhnJHxkZETXrl3T+Pi45fH+/fs2hwNs6l2KVAFMeQgQt/ESGMVhA+boRIRNtT0N6LgeQMIuAjFkB4wRV3748KFtRFg0AUaAQMg1oZMigMWiAMQrvnpMIigSDrsCxQAgIDYC7DC/ZTCKQBYJmwWU2J1nTwXJ50qSNw8TqHuKpHKIIseA40J+GAkNI8DAWE96CITN3UtSxdEyIBAU8AgF78DsysefOYDoeLgeAelIHWyvMvkC4Dn0OYRnOpCfT78Ifhm4eqmQmcAQGM8eBt4xzwYoc0M4QkDdOwembgouT05OFo8NMCAAEXJn/xgdfL89fICAU80BINcOQw/Zuw/veMgRSn6jAVMoCuctLgU82omPvtP/aK5Joal4w3X94r8i/+Uvk/wPipDIFyFybzmPvHsrY96FNc4kLSzJyLjr/MgP+aBIjOTHbwkb+MfI18kbZ9a/N/9PyH19fbpy5YoYkf7+fvX29qqnp+e7gg66Lt3d3erp7VWmurpax8rL1djYqHPnzun06dOqq6uz94sXL+rSpUsH0mTvzc3NamhoUH19vWpqanTmzBnTPXHipCorK5Wpra1VZeUv+qu1VU1NTabY0tKi9rY2tbe3q6OzU52dHerq7NDly5fV1dWljo52tf7ZovPnz+vChQtqa2tT9W9VOnv2d2XCMFQQ5hSGkXiO40hhlFMQRgqCQEGQVTYqUzauUJDN2nsQlSkoO6k4jhVF6MfKHquyMRNFscLySkUHi1EYKDx2UlHZceXiWLk4VPRTtcJTfxy+V/yq7Kl6YWv6uQplf25QWHZcGTxip7TkzLuSkhKVlpaopDRrUlpaanPZIFScK0/ZRHGZ2ZmHhclDMLCqqiorBgVoPBCemaMYYRiknYgik78BuBPfnJxuOWgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;mobile-view-example&quot;
+        title=&quot;mobile-view-example&quot;
+        src=&quot;/static/20cbdb0d03b958bf6f3d22cf40edeb57/f058b/mobile-view-example.png&quot;
+        srcset=&quot;/static/20cbdb0d03b958bf6f3d22cf40edeb57/c26ae/mobile-view-example.png 158w,
+/static/20cbdb0d03b958bf6f3d22cf40edeb57/6bdcf/mobile-view-example.png 315w,
+/static/20cbdb0d03b958bf6f3d22cf40edeb57/f058b/mobile-view-example.png 630w,
+/static/20cbdb0d03b958bf6f3d22cf40edeb57/40601/mobile-view-example.png 945w,
+/static/20cbdb0d03b958bf6f3d22cf40edeb57/105d8/mobile-view-example.png 1170w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;스크롤이 생겨도 상관없는 페이지라면 그대로 사용해도 괜찮지만 상단의 이미지와 같이 스크롤이 &lt;strong&gt;&lt;em&gt;절대로&lt;/em&gt;&lt;/strong&gt; 생기면 안 되는 페이지라면 env도 사실상 무용지물 일 때도 있습니다.&lt;/p&gt;
+&lt;p&gt;이러한 경우 공간 차지가 적은 요소가 렌더링 돼도 화면의 100%를 채우기 위해서 &lt;code class=&quot;language-text&quot;&gt;100vh&lt;/code&gt;를 사용하게 되는데, &lt;code class=&quot;language-text&quot;&gt;position: absolute;&lt;/code&gt; 상태에서 &lt;code class=&quot;language-text&quot;&gt;env()&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;constant()&lt;/code&gt;를 적용해도 safe-area의 값을 기준으로 컨테이너의 높이가 더욱 증가해서 아무런 요소가 없어도 스크롤이 발생하는 경우가 있습니다.&lt;/p&gt;
+&lt;h2&gt;모바일에서 전체 높이를 차지하는 방법&lt;/h2&gt;
+&lt;h3&gt;1. % 단위 사용&lt;/h3&gt;
+&lt;p&gt;사실 body에 &lt;code class=&quot;language-text&quot;&gt;height&lt;/code&gt; 값을 100%로 지정하면 vh(Viewport height) 단위를 사용하지 않아도 최대 높이로 지정됩니다.&lt;/p&gt;
+&lt;h3&gt;2. fill-available 사용&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;fill-available&lt;/code&gt;는 css에서 사용 가능한 값입니다.&lt;/p&gt;
+&lt;p&gt;사용 방법은 간단한데, 아래와 같이 작성하면 됩니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* Element의 전체 높이 */&lt;/span&gt;
+&lt;span class=&quot;token selector&quot;&gt;.my-div-name&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 100vh&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* fill-available 자체가 없을 때 사용 가능 */&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; -moz-available&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* 파이어폭스에서 사용 가능 */&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; -webkit-fill-available&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* 웹킷 기반 브라우저에서 사용 가능 */&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; fill-available&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;하지만 이 방식을 사용하면 PC에서는 100%가 작동하지만 일부 브라우저에서는 그렇지 않는데, 다음 방법을 사용하면 됩니다.&lt;/p&gt;
+&lt;h3&gt;3. window.innerHeight 사용&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;이 포스트에서 작성된 코드는 React를 기준으로 작성되었습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;2-1. 기본&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이 방법을 사용하기 위해서는 JavaScript가 필요합니다.&lt;/p&gt;
+&lt;p&gt;기본적인 동작 자체는 &lt;code class=&quot;language-text&quot;&gt;EvnetListener&lt;/code&gt;를 등록해서 height 값을 변경하면 되는데, React에서는 아래와 같이 적용하면 됩니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Hooks&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; useState&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; useEffect &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;useWindowSize&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;width&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setWidth&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;innerWidth&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;height&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setHeight&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;innerHeight&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token function&quot;&gt;useEffect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;setWindowSize&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;setWidth&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;innerWidth&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;setHeight&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;innerHeight&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;resize&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setWindowSize&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;removeEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;resize&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setWindowSize&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    width&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    height&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Render&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 보다 직관적인 예시를 위해 styled-components에 적용하는 예시로 작성됨&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; useWindowSize &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;./useWindowSize&quot;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 경로는 직접 지정하면 됩니다.&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; styled &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;styled-components&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Wrapper &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; styled&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;div&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+  width: 100%;
+  &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;props&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;props&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;height &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;height: &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;props&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;height&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;px;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; height &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useWindowSize&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Wrapper&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;height&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;// Your Children&amp;lt;/Wrapper&gt;
+}
+
+export default App&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;2.2 SSR에서 사용 가능한 useWindowSize&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;만약 2-1에서 작성한 코드가 잘 적용됐다면 resize 할 때마다 window의 내부 크기를 가져와 적용하게 되는데, 이 방식은 &lt;code class=&quot;language-text&quot;&gt;SSR&lt;/code&gt; 기반에서는 사용이 불가능합니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/22340c0fae6d3c3aab5b5fe6b30f96b9/4ff83/gatsby-error-example.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 37.9746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABFElEQVQoz42Q/WqDMBTFfZotfiRqNB9WqXZdHZR2MvYUg8FA6fOfcaMGB+vYHz9yc0POPecGX90ZH00Pk1dgwiBODSKhPXQnHuMCD5H00J0lpT9Xgsy04GUDaTqUtoM0LQrTQeoWudq7s7QHpEWDJLPgeeVYh2zFnGCSWoi8gpC72U1m3UdidUe1KGqkRY2sbBzU27pcCViiwLiaI7q4M3FqfR0ttXPBFehPyPXyZhAKPcM1AiqYrJHrFlLvXUxVPTk3FFXZg1sFrYH6NOi3qD4yCVLceUcGEVc/IrBN/R+CkKtl2TvwZW9knfrsjpM/Hd7O7xifrxiPF4z9gOn0iul4wfTyhul4xe004LMfvPN7QqvgN1pS/rtQbWawAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;gatsby-error-example&quot;
+        title=&quot;gatsby-error-example&quot;
+        src=&quot;/static/22340c0fae6d3c3aab5b5fe6b30f96b9/f058b/gatsby-error-example.png&quot;
+        srcset=&quot;/static/22340c0fae6d3c3aab5b5fe6b30f96b9/c26ae/gatsby-error-example.png 158w,
+/static/22340c0fae6d3c3aab5b5fe6b30f96b9/6bdcf/gatsby-error-example.png 315w,
+/static/22340c0fae6d3c3aab5b5fe6b30f96b9/f058b/gatsby-error-example.png 630w,
+/static/22340c0fae6d3c3aab5b5fe6b30f96b9/4ff83/gatsby-error-example.png 843w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;그 이유는 위 이미지와 같이(Gatsby 빌드 시) window의 객체가 없다는 에러가 발생하게 되는데, 이러한 경우에는 window의 객체가 있는지 확인 후 객체가 없다면 해당 useEffect를 중단하는 형식으로 작성하면 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Hooks&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;/*
+ * window객체가 없으면 state들은 모두 0으로 지정하고
+ * useEffect는 상단 return에 의해 아래 함수가 실행 되기 전 취소가 되는 로직이다.
+ */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; useState&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; useEffect &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;useWindowSize&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; isBrowser &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; window &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;undefined&quot;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 변경됨&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;width&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setWidth&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;isBrowser &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;innerWidth &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 변경됨&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;height&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setHeight&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;isBrowser &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;innerHeight &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 변경됨&lt;/span&gt;
+
+  &lt;span class=&quot;token function&quot;&gt;useEffect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;isBrowser&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 변경됨&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;setWindowSize&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;setWidth&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;innerWidth&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;setHeight&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;innerHeight&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;resize&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setWindowSize&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;removeEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;resize&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setWindowSize&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;isBrowser&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 변경됨&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    width&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    height&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이러한 검증 과정을 거치게 되면 SSR에서도 문제없이 사용할 수 있습니다.&lt;/p&gt;</content:encoded></item></channel></rss>
