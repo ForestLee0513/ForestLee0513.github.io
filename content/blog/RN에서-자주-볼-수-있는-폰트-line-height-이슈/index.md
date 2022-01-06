@@ -70,29 +70,27 @@ export default MyApp
 ### MyApp.tsx (컴포넌트)
 
 ```tsx
-import { React } from "react";
-import { SafeAreaView, StyleSheet } from "react-native";
-import styled from "styled-components/native";
+import { React } from "react"
+import { SafeAreaView, StyleSheet } from "react-native"
+import styled from "styled-components/native"
 
 // styled-components 적용
-const styled.Text`
-  font-family: "Spoqa_Han_Sans_Neo"; // import된 원하는 커스텀 폰트 추가
-  font-size: 24px; // styled-components적용 시 단위를 작성해야합니다.
-  include-font-padding: false;
+const StyledText = styled.Text`
+  font-family: "Spoqa_Han_Sans_Neo"; /* import된 원하는 커스텀 폰트 추가 */
+  font-size: 24px; /* styled-components적용 시 단위를 작성해야 합니다. */
+  include-font-padding: false; /* 별도의 설정을 거치지 않았다면 없는 속성으로 출력됩니다. (하단 tsconfig.json 참고)*/
 `
 
 function MyApp() {
- // 폰트는 이미 import 했다는 전제 조건으로 예제를 작성했습니다.
- return (
-  <SafeAreaView>
-   <Text>
-    안녕하세요!!!
-   </Text>
-  </SafeAreaView>
- )
+  // 폰트는 이미 import 했다는 전제 조건으로 예제를 작성했습니다.
+  return (
+    <SafeAreaView>
+      <StyledText>안녕하세요!!!</StyledText>
+    </SafeAreaView>
+  )
 }
 
-export default MyApp;
+export default MyApp
 ```
 
 ### tsconfig.json
