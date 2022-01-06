@@ -3,6 +3,7 @@ import Seo from "../components/Seo"
 import styled from "styled-components"
 import indexForestImage from "../images/index-forest.jpg"
 import Footer from "../components/Footer"
+import { usePointerPosition } from "../hooks/usePointerPosition"
 
 const IndexImageContainer = styled.div`
   display: flex;
@@ -16,6 +17,16 @@ const IndexImageContainer = styled.div`
 const ForestImageGroup = styled.div`
   width: 100%;
   height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(100%);
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+`
+
+const ForestImage = styled.div`
   background: linear-gradient(
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.8)
@@ -24,12 +35,9 @@ const ForestImageGroup = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  filter: grayscale(100%);
-  flex-direction: column;
-  position: relative;
+  position: absolute;
+  width: 110%;
+  height: 110%;
 `
 
 const Title = styled.div`
@@ -42,6 +50,7 @@ const Title = styled.div`
   font-size: 2.986rem;
   user-select: none;
   line-height: 1.5;
+  z-index: 2;
 `
 
 const InnerTitleContainer = styled.b`
@@ -103,11 +112,20 @@ const InnerTitle = styled.div`
 `
 
 const Index = () => {
+  const pointerPosition = usePointerPosition(true)
+
   return (
     <>
       <Seo title="홈" />
       <IndexImageContainer>
         <ForestImageGroup>
+          <ForestImage
+            style={{
+              transform: `translate(${pointerPosition.x * 0.01}px, ${
+                pointerPosition.y * 0.01
+              }px)`,
+            }}
+          />
           <Title>
             <InnerTitleContainer>
               <InnerTitle>
