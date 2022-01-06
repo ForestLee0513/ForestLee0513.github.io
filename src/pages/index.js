@@ -38,6 +38,7 @@ const ForestImage = styled.div`
   position: absolute;
   width: 110%;
   height: 110%;
+  transition: 0.1s transform;
 `
 
 const Title = styled.div`

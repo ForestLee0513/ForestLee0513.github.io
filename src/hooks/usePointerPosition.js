@@ -7,22 +7,25 @@ export const usePointerPosition = fromCenter => {
     y: 0,
   })
 
-  const setMousePosition = useCallback(event => {
-    const centerX = window.innerWidth / 2
-    const centerY = window.innerHeight / 2
+  const setMousePosition = useCallback(
+    event => {
+      const centerX = window.innerWidth / 2
+      const centerY = window.innerHeight / 2
 
-    if (fromCenter) {
-      setPosition({
-        x: event.clientX - centerX,
-        y: event.clientY - centerY,
-      })
-    } else {
-      setPosition({
-        y: event.clientY,
-        x: event.clientX,
-      })
-    }
-  }, [])
+      if (fromCenter) {
+        setPosition({
+          x: event.clientX - centerX,
+          y: event.clientY - centerY,
+        })
+      } else {
+        setPosition({
+          y: event.clientY,
+          x: event.clientX,
+        })
+      }
+    },
+    [fromCenter]
+  )
 
   useEffect(() => {
     if (!isBrowser) return
