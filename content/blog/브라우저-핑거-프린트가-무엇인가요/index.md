@@ -80,7 +80,7 @@ ctx.fillText(txt, 4, 17)
 
 만약 코드를 성공적으로 실행했다면 아래와 같은 Canvas 결과물이 나올 것입니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2a205da7-001d-492d-b06b-df7a5a9713b1/Untitled.png)
+![Canvas](./canvas.png)
 
 이제 이 Canvas로 무엇을 할지 의문이 들 텐데, Canvas를 png 등 이미지로 바꿀 수 있다는 것을 생각해 봅시다.
 
