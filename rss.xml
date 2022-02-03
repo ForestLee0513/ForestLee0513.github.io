@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[이우림]]></title><description><![CDATA[안녕하세요, 프론트엔드 엔지니어 이우림입니다.]]></description><link>https://forestlee0513.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 Jan 2022 17:50:43 GMT</lastBuildDate><item><title><![CDATA[프론트엔드 엔지니어 이우림 입니다.]]></title><description><![CDATA[연락처 / URL 메일: woolimlee.dev@gmail.com 사용 기술 프론트엔드 언어 JavaScript TypeScript HTML CSS 프론트엔드 프레임워크 / 라이브러리 React Sass(Scss) node gulp Webpack…]]></description><link>https://forestlee0513.github.io/about-me/</link><guid isPermaLink="false">https://forestlee0513.github.io/about-me/</guid><content:encoded>&lt;h2&gt;연락처 / URL&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[이우림]]></title><description><![CDATA[안녕하세요, 프론트엔드 엔지니어 이우림입니다.]]></description><link>https://forestlee0513.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 03 Feb 2022 05:19:51 GMT</lastBuildDate><item><title><![CDATA[프론트엔드 엔지니어 이우림 입니다.]]></title><description><![CDATA[연락처 / URL 메일: woolimlee.dev@gmail.com 사용 기술 프론트엔드 언어 JavaScript TypeScript HTML CSS 프론트엔드 프레임워크 / 라이브러리 React Sass(Scss) node gulp Webpack…]]></description><link>https://forestlee0513.github.io/about-me/</link><guid isPermaLink="false">https://forestlee0513.github.io/about-me/</guid><content:encoded>&lt;h2&gt;연락처 / URL&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;메일: &lt;a href=&quot;mailto:woolimlee.dev@gmail.com&quot;&gt;woolimlee.dev@gmail.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -53,7 +53,78 @@
 &lt;p&gt;&lt;em&gt;2020.11 ~ 2021.01&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.piclick.me/&quot;&gt;피에스알미디어&lt;/a&gt;에서 Front-end Developer 직군 실습 후 정규직 전환&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[브라우저 핑거 프린트가 무엇인가요?]]></title><description><![CDATA[브라우저 핑거 프린트 소개 브라우저 핑거 프린트(혹은 디바이스 핑거 프린트)란 사용자 식별을 위해 수집된 기기의 하드웨어 정보를 뜻하며 거의 중복되지 않는 값을 가집니다. 브라우저 핑거 프린트는 ip…]]></description><link>https://forestlee0513.github.io/브라우저-핑거-프린트가-무엇인가요/</link><guid isPermaLink="false">https://forestlee0513.github.io/브라우저-핑거-프린트가-무엇인가요/</guid><pubDate>Sun, 09 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;브라우저 핑거 프린트 소개&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[RN에서 Status Bar 영역 구분]]></title><description><![CDATA[이슈 발견 프로젝트를 진행하면서 ios에서는 문제 없지만 안드로이드에서 컴포넌트들이 Status Bar안으로 들어가서 정상적인 출력이 불가능한 문제가 발생하여 해결방법을 올리고자 합니다. iPhone X 이후 iOS 기기에서 비슷하게 Status…]]></description><link>https://forestlee0513.github.io/RN에서-Status-Bar-영역-구분/</link><guid isPermaLink="false">https://forestlee0513.github.io/RN에서-Status-Bar-영역-구분/</guid><pubDate>Thu, 03 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;이슈 발견&lt;/h2&gt;
+&lt;p&gt;프로젝트를 진행하면서 ios에서는 문제 없지만 안드로이드에서 컴포넌트들이 Status Bar안으로 들어가서 정상적인 출력이 불가능한 문제가 발생하여 해결방법을 올리고자 합니다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;iPhone X 이후 iOS 기기에서 비슷하게 Status Bar와 하단 Bar 안으로 들어간다면 RN에서 제공하는 &lt;a href=&quot;https://reactnative.dev/docs/safeareaview&quot;&gt;SafeAreaView&lt;/a&gt;를 참고 하면 됩니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c469594139ff98774c357835d83245f8/ebf47/header-overflow.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.22784810126582%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACbUlEQVQoz6WO3UuTYRiH918Ybss03d733fyYc1NbdJDigVY61wcWknv3qWkRrDpRyIbB5gyCPBBqoORJf4JgdGLmBzrnF5sZEWRR6gTBwK8r9iqJRAfVDRfPc9/Pw3X/VCufv7Cy8pX1tRRLySXGxyaITc8wNTlNbDrO+LtxkoklEosJJicmWVxYZCYWZ2Funtn4HPGZOJPjE7wdGWV5+QOqaDRK77Ne7gXu0+xvxu1y4/V48Xn9eD0+pff7/Aou2YXslH/hdDrxeX10h8P09fURfRFF1dHeTsX5CvJydYiChCBI6HUC2ady0GpPKqjVGjIz1QrqTA1abRYatVaZZ2ScQJIMBAIBOjs7UaUvFnMJxSYT1hIzJcUmzMUmigrzyTdKGCQRgygginoEfR6iPr1Yhy4vl9M52QpajQaP20MoFELV1tqG7cw5bLZKjAVl5BeUoxet6AQLBmMpBqMVUbIgSCUIohmdYCJXV4goFVNYaMWYb0GjyaapqelA2Oz3UV13F/edV+QUdVBg66LiUg9V9icUnO1Cb3mEYD1CLA0qs/KqHi429FFZ/5wsXTU3GxsIhcKoWm/5qLjQQWPbKPXyEFc8w7Q8GOF2+yjXW97gcL3msvt3HK5h6pqGuOYfo6jMQ+ONq4TD3ag8bjeRyFM+fvrG3Px7ZmaTTMUSTMeSfF/dJLXxg/XUFusbx0ltbLG6tsk+0N7xEIfDQSQSQSXLMoODL/mn2t9TjsddXdjt9gOhS5bp7x9QHra3d9jb2z/O/p9J/09XMBik3l5/lHDgULi7u/tXAXd2joS1tbWHQmc6Yf9/C2uqaxThT6hFkQIbUvCJAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Android Status Bar 오류 스크린샷 (구글 검색)&quot;
+        title=&quot;Android Status Bar 오류 스크린샷 (구글 검색)&quot;
+        src=&quot;/static/c469594139ff98774c357835d83245f8/f058b/header-overflow.png&quot;
+        srcset=&quot;/static/c469594139ff98774c357835d83245f8/c26ae/header-overflow.png 158w,
+/static/c469594139ff98774c357835d83245f8/6bdcf/header-overflow.png 315w,
+/static/c469594139ff98774c357835d83245f8/f058b/header-overflow.png 630w,
+/static/c469594139ff98774c357835d83245f8/ebf47/header-overflow.png 688w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Android Status Bar 오류 스크린샷 (구글 검색)&lt;/p&gt;
+&lt;h2&gt;해결 방법&lt;/h2&gt;
+&lt;h3&gt;android에만 padding 적용하기&lt;/h3&gt;
+&lt;p&gt;RN에서는 &lt;a href=&quot;https://reactnative.dev/docs/platform&quot;&gt;Platform&lt;/a&gt;이라는 API를 사용하여 사용자의 OS 이름을 알아낼 수 있습니다.&lt;/p&gt;
+&lt;p&gt;그리고 OS이름을 구분한 뒤 &lt;code class=&quot;language-text&quot;&gt;padding&lt;/code&gt;이나 &lt;code class=&quot;language-text&quot;&gt;margin&lt;/code&gt; 값을 주면 Status Bar의 높이와 근접하게 공간을 줘서 컨테이너 안으로 들어간 것 처럼 할 수 있습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Platform&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; StyleSheet &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react-native&quot;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; style &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; StyleSheet&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// body View container&lt;/span&gt;
+  body&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    marginTop&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Platform&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;OS&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;android&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;하지만 이렇게 적용하면 기기마다 값이 다르거나 Android의 버전이 변경되면서 margin 값도 달라질 수 있다는 점에서 좋은 방법이 아니라고 생각합니다.&lt;/p&gt;
+&lt;p&gt;그래서 유동적으로 변경되는 방법을 찾게 되었는데 마찬가지로 RN에서 제공하는 컴포넌트인 StatusBar를 아래 파트처럼 적용하면 됩니다.&lt;/p&gt;
+&lt;h3&gt;Status Bar의 높이를 가져오는 방법&lt;/h3&gt;
+&lt;p&gt;이번에는 RN에서 &lt;a href=&quot;https://reactnative.dev/docs/statusbar&quot;&gt;Status Bar 컴포넌트&lt;/a&gt;를 직접 제어하는 방법입니다.&lt;/p&gt;
+&lt;p&gt;먼저 아래와 같이 컴포넌트를 import하면 됩니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; StatusBar&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; StyleSheet &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react-native&quot;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; style &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; StyleSheet&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// body View container&lt;/span&gt;
+  body&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    marginTop&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; StatusBar&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;currentHeight&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Status Bar의 높이를 어떻게 자동으로 가져오는지 조금 더 자세히 보고 싶다면 &lt;a href=&quot;https://github.com/facebook/react-native&quot;&gt;RN 레파지토리&lt;/a&gt;의 &lt;a href=&quot;https://github.com/facebook/react-native/blob/main/Libraries/Components/StatusBar/StatusBar.js&quot;&gt;StatusBar.js&lt;/a&gt;파일 250번 라인 이후와 &lt;a href=&quot;https://github.com/facebook/react-native/blob/main/Libraries/Components/StatusBar/NativeStatusBarManagerAndroid.js&quot;&gt;NativeStatusBarManagerAndroid.js&lt;/a&gt; 파일을 참고하면 되고, 이 방식을 사용 했을 경우 Native Module에서 직접 Status Bar를 가져오므로 높이 값이 변경 됩니다.&lt;/p&gt;
+&lt;p&gt;그리고 iOS에서는 &lt;a href=&quot;https://reactnative.dev/docs/statusbar&quot;&gt;문서&lt;/a&gt;에서 보거나 아래에 첨부한 StatusBar.js의 250번 라인부터 보면 null로 반환되는 것을 알 수 있는데, 이를 참고하여 StyleSheet를 생성할 때 &lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator&quot;&gt;Nullish Coalescing&lt;/a&gt;를 사용하거나 Platform API의 OS Property를 사용하여 안드로이드만 marginTop이 적용되게 하면 됩니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Libraries/Components/StatusBar/StatusBar.js&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 250번 라인부터 시작...&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; currentHeight&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;number &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;
+    Platform&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;OS&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;android&apos;&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; NativeStatusBarManagerAndroid&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getConstants&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;HEIGHT&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;하지만 이제는 &lt;code class=&quot;language-text&quot;&gt;StatusBar&lt;/code&gt;의 텍스트 색상이 배경색과 비슷해 보여서 안보이는 문제가 발생하는데 이 내용은 다음 글인 **“RN에서 StatusBar가 안보이는 문제”**에서 다루도록 하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[브라우저 핑거 프린트가 무엇인가요?]]></title><description><![CDATA[브라우저 핑거 프린트 소개 브라우저 핑거 프린트(혹은 디바이스 핑거 프린트)란 사용자 식별을 위해 수집된 기기의 하드웨어 정보를 뜻하며 거의 중복되지 않는 값을 가집니다. 브라우저 핑거 프린트는 ip…]]></description><link>https://forestlee0513.github.io/브라우저-핑거-프린트가-무엇인가요/</link><guid isPermaLink="false">https://forestlee0513.github.io/브라우저-핑거-프린트가-무엇인가요/</guid><pubDate>Sun, 09 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;브라우저 핑거 프린트 소개&lt;/h2&gt;
 &lt;p&gt;브라우저 핑거 프린트(혹은 디바이스 핑거 프린트)란 사용자 식별을 위해 수집된 기기의 하드웨어 정보를 뜻하며 거의 중복되지 않는 값을 가집니다.&lt;/p&gt;
 &lt;p&gt;브라우저 핑거 프린트는 ip 주소가 숨겨지거나 영구 쿠키(혹은 좀비 쿠키)를 이용하여 사용자를 추적할 수 없는 경우 사용되며 같은 기기에서 다른 브라우저로 접속했을 때 사용자를 추적하기 위해 사용되거나 신용카드 위조를 방지하기 위해 사용됩니다.&lt;/p&gt;
 &lt;p&gt;그리고 브라우저 핑거 프린트는 저장소에 직접 저장되는 쿠키 방식과 다르게 하드웨어 정보를 기반으로 사용자를 식별하기 때문에 하드웨어의 속도에 영향이 생기지 않는다는 장점이 있습니다.&lt;/p&gt;
@@ -336,7 +407,7 @@ NVM이나 n을 설치하여 node의 버전을 관리한다면, 기존 node를 �
 &lt;h2&gt;이슈 발견&lt;/h2&gt;
 &lt;p&gt;이 글을 작성할 당시 React Native 프로젝트에서 graphql을 설치하던 도중 아래와 같이 버전 이슈가 발생했습니다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;&lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;error graphql@16&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;0: The engine &lt;span class=&quot;token string&quot;&gt;&quot;node&quot;&lt;/span&gt; is incompatible with this module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; Expected version &lt;span class=&quot;token string&quot;&gt;&quot;^12.22.0 || ^14.16.0 || &gt;=16.0.0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; Got &lt;span class=&quot;token string&quot;&gt;&quot;14.15.1&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;물론 node를 지우고 다시 해당 버전에 맞게 재설치 하는 것도 방법이지만, 이러한 버전 문제가 자주 발생할 것 같아 더 좋은 방법이 있는지 찾아보게 되었습니다&lt;/p&gt;
+&lt;p&gt;물론 node를 지우고 다시 해당 버전에 맞게 재설치 하는 것도 방법이지만, 이러한 버전 문제가 자주 발생할 것 같아 더 좋은 방법이 있는지 찾아보게 되었습니다.&lt;/p&gt;
 &lt;h2&gt;n 사용 (Linux, Mac OS)&lt;/h2&gt;
 &lt;p&gt;n을 사용하여 노드 버전을 여러 가지로 손쉽게 변경할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;먼저 설치 방법을 보자면 우리가 평소에 패키지를 설치하는 것처럼 &lt;code class=&quot;language-text&quot;&gt;npm install -g n&lt;/code&gt; 이라고 입력하면 설치는 끝났지만 설치가 안 됐다면 &lt;a href=&quot;https://github.com/tj/n&quot;&gt;공식 문서&lt;/a&gt;에서 Brew 등 여러 설치법이 있으니 참고하면 됩니다.&lt;/p&gt;
@@ -564,7 +635,7 @@ export default App&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;그 이유는 위 이미지와 같이(Gatsby 빌드 시) window의 객체가 없다는 에러가 발생하게 되는데, 이러한 경우에는 window의 객체가 있는지 확인 후 객체가 없다면 해당 useEffect를 중단하는 형식으로 작성하면 된다.&lt;/p&gt;
+&lt;p&gt;그 이유는 위 이미지와 같이(Gatsby 빌드 시) window의 객체가 없다는 에러가 발생하게 되는데, 이러한 경우에는 window의 객체가 있는지 확인 후 객체가 없다면 해당 useEffect를 중단하는 형식으로 작성하면 됩니다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Hooks&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;/*
  * window객체가 없으면 state들은 모두 0으로 지정하고
