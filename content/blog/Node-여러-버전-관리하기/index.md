@@ -17,7 +17,7 @@ thumbnail: ./thumbnail.png
 error graphql@16.1.0: The engine "node" is incompatible with this module. Expected version "^12.22.0 || ^14.16.0 || >=16.0.0". Got "14.15.1"
 ```
 
-물론 node를 지우고 다시 해당 버전에 맞게 재설치 하는 것도 방법이지만, 이러한 버전 문제가 자주 발생할 것 같아 더 좋은 방법이 있는지 찾아보게 되었습니다
+물론 node를 지우고 다시 해당 버전에 맞게 재설치 하는 것도 방법이지만, 이러한 버전 문제가 자주 발생할 것 같아 더 좋은 방법이 있는지 찾아보게 되었습니다.
 
 ## n 사용 (Linux, Mac OS)
 

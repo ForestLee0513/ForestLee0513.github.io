@@ -112,7 +112,7 @@ export default App
 
 ![gatsby-error-example](./gatsby-error-example.png)
 
-그 이유는 위 이미지와 같이(Gatsby 빌드 시) window의 객체가 없다는 에러가 발생하게 되는데, 이러한 경우에는 window의 객체가 있는지 확인 후 객체가 없다면 해당 useEffect를 중단하는 형식으로 작성하면 된다.
+그 이유는 위 이미지와 같이(Gatsby 빌드 시) window의 객체가 없다는 에러가 발생하게 되는데, 이러한 경우에는 window의 객체가 있는지 확인 후 객체가 없다면 해당 useEffect를 중단하는 형식으로 작성하면 됩니다.
 
 ```jsx
 // Hooks
