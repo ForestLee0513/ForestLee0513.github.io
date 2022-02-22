@@ -69,11 +69,11 @@ const lists = new Array(100000).fill(null).map((_, i) => i)
 
 // circular reference
 function circular(list, target) {
-  console.time("circular time");
+  console.time("circular time")
   for (let i = 0; i < list.length; i++) {
     if (list[i] === target) {
-      console.timeEnd("circular time");
-      return i;
+      console.timeEnd("circular time")
+      return i
     }
   }
 
@@ -82,27 +82,28 @@ function circular(list, target) {
 
 // binary search
 function binarySearch(list, target) {
-	let low = 0;
-	let high = nums.length - 1;
-	console.time("binary search time");
+  let low = 0
+  let high = list.length - 1
+  console.time("binary search time")
 
-	while (low <= high) {
-		let mid = Math.floor((high + low) / 2));
+  while (low <= high) {
+    const mid = Math.floor((high + low) / 2)
 
-		if (nums[mid] === target) {
-			console.timeEnd("binary search time");
-			return mid
-		} else if (nums[mid] > target) {
+    if (list[mid] === target) {
+      console.timeEnd("binary search time")
+      return mid
+    } else if (list[mid] > target) {
       high = mid - 1
-    } else if (nums[mid] < target) {
+    } else if (list[mid] < target) {
       low = mid + 1
     }
+  }
 
-		return "X"
+  return "X"
 }
 
-console.log(circular(lists, 93742));
-console.log(search(lists, 93742));
+console.log(circular(lists, 93742))
+console.log(binarySearch(lists, 93742))
 ```
 
 이제 해당 함수를 실행했을 때 Binary Search가 얼마나 빠른지 아래와 같은 결과로 알 수 있습니다.
