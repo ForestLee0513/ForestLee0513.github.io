@@ -270,11 +270,11 @@ data-styled.g44[id="blog-post___StyledArrow-sc-1993m0e-6"]{content:"hhPHd,"}/*!s
 
 <span class="token comment">// circular reference</span>
 <span class="token keyword">function</span> <span class="token function">circular</span><span class="token punctuation">(</span><span class="token parameter">list<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">time</span><span class="token punctuation">(</span><span class="token string">"circular time"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">time</span><span class="token punctuation">(</span><span class="token string">"circular time"</span><span class="token punctuation">)</span>
   <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> list<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">if</span> <span class="token punctuation">(</span>list<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">===</span> target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      console<span class="token punctuation">.</span><span class="token function">timeEnd</span><span class="token punctuation">(</span><span class="token string">"circular time"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token keyword">return</span> i<span class="token punctuation">;</span>
+      console<span class="token punctuation">.</span><span class="token function">timeEnd</span><span class="token punctuation">(</span><span class="token string">"circular time"</span><span class="token punctuation">)</span>
+      <span class="token keyword">return</span> i
     <span class="token punctuation">}</span>
   <span class="token punctuation">}</span>
 
@@ -283,27 +283,28 @@ data-styled.g44[id="blog-post___StyledArrow-sc-1993m0e-6"]{content:"hhPHd,"}/*!s
 
 <span class="token comment">// binary search</span>
 <span class="token keyword">function</span> <span class="token function">binarySearch</span><span class="token punctuation">(</span><span class="token parameter">list<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-	<span class="token keyword">let</span> low <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-	<span class="token keyword">let</span> high <span class="token operator">=</span> list<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
-	console<span class="token punctuation">.</span><span class="token function">time</span><span class="token punctuation">(</span><span class="token string">"binary search time"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> low <span class="token operator">=</span> <span class="token number">0</span>
+  <span class="token keyword">let</span> high <span class="token operator">=</span> list<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span>
+  console<span class="token punctuation">.</span><span class="token function">time</span><span class="token punctuation">(</span><span class="token string">"binary search time"</span><span class="token punctuation">)</span>
 
-	<span class="token keyword">while</span> <span class="token punctuation">(</span>low <span class="token operator">&lt;=</span> high<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token keyword">let</span> mid <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token punctuation">(</span>high <span class="token operator">+</span> low<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>low <span class="token operator">&lt;=</span> high<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> mid <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token punctuation">(</span>high <span class="token operator">+</span> low<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>
 
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>list<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">===</span> target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-			console<span class="token punctuation">.</span><span class="token function">timeEnd</span><span class="token punctuation">(</span><span class="token string">"binary search time"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-			<span class="token keyword">return</span> mid
-		<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>list<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">></span> target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>list<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">===</span> target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">timeEnd</span><span class="token punctuation">(</span><span class="token string">"binary search time"</span><span class="token punctuation">)</span>
+      <span class="token keyword">return</span> mid
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>list<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">></span> target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
       high <span class="token operator">=</span> mid <span class="token operator">-</span> <span class="token number">1</span>
     <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>list<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">&lt;</span> target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
       low <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span>
     <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
 
-		<span class="token keyword">return</span> <span class="token string">"X"</span>
+  <span class="token keyword">return</span> <span class="token string">"X"</span>
 <span class="token punctuation">}</span>
 
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">circular</span><span class="token punctuation">(</span>lists<span class="token punctuation">,</span> <span class="token number">93742</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">search</span><span class="token punctuation">(</span>lists<span class="token punctuation">,</span> <span class="token number">93742</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">circular</span><span class="token punctuation">(</span>lists<span class="token punctuation">,</span> <span class="token number">93742</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">binarySearch</span><span class="token punctuation">(</span>lists<span class="token punctuation">,</span> <span class="token number">93742</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></div>
 <p>이제 해당 함수를 실행했을 때 Binary Search가 얼마나 빠른지 아래와 같은 결과로 알 수 있습니다.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
