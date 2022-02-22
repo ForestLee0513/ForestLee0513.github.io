@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[이우림]]></title><description><![CDATA[안녕하세요, 프론트엔드 엔지니어 이우림입니다.]]></description><link>https://forestlee0513.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 14 Feb 2022 05:37:38 GMT</lastBuildDate><item><title><![CDATA[프론트엔드 엔지니어 이우림 입니다.]]></title><description><![CDATA[연락처 / URL 메일: woolimlee.dev@gmail.com 사용 기술 프론트엔드 언어 JavaScript TypeScript HTML CSS 프론트엔드 프레임워크 / 라이브러리 React Sass(Scss) node gulp Webpack…]]></description><link>https://forestlee0513.github.io/about-me/</link><guid isPermaLink="false">https://forestlee0513.github.io/about-me/</guid><content:encoded>&lt;h2&gt;연락처 / URL&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[이우림]]></title><description><![CDATA[안녕하세요, 프론트엔드 엔지니어 이우림입니다.]]></description><link>https://forestlee0513.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Feb 2022 01:05:47 GMT</lastBuildDate><item><title><![CDATA[프론트엔드 엔지니어 이우림 입니다.]]></title><description><![CDATA[연락처 / URL 메일: woolimlee.dev@gmail.com 사용 기술 프론트엔드 언어 JavaScript TypeScript HTML CSS 프론트엔드 프레임워크 / 라이브러리 React Sass(Scss) node gulp Webpack…]]></description><link>https://forestlee0513.github.io/about-me/</link><guid isPermaLink="false">https://forestlee0513.github.io/about-me/</guid><content:encoded>&lt;h2&gt;연락처 / URL&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;메일: &lt;a href=&quot;mailto:woolimlee.dev@gmail.com&quot;&gt;woolimlee.dev@gmail.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -53,7 +53,249 @@
 &lt;p&gt;&lt;em&gt;2020.11 ~ 2021.01&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.piclick.me/&quot;&gt;피에스알미디어&lt;/a&gt;에서 Front-end Developer 직군 실습 후 정규직 전환&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[RN 에서 StatusBar가 안보이는 문제]]></title><description><![CDATA[이슈 발견 얼마 전 RN 프로젝트를 진행하며 레이아웃을 적용하게 되었는데, 이 과정에서 의 색상이 배경색과 비슷하게 보이는 문제가 발생하였습니다. 다행히 이전 글인 RN에서 Status Bar…]]></description><link>https://forestlee0513.github.io/RN-에서-StatusBar가-안보이는-문제/</link><guid isPermaLink="false">https://forestlee0513.github.io/RN-에서-StatusBar가-안보이는-문제/</guid><pubDate>Mon, 14 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;이슈 발견&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Binary Search Algorithm]]></title><description><![CDATA[Binary Search 소개 Binary Search Algorithm…]]></description><link>https://forestlee0513.github.io/Binary-Search-Algorithm/</link><guid isPermaLink="false">https://forestlee0513.github.io/Binary-Search-Algorithm/</guid><pubDate>Tue, 22 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Binary Search 소개&lt;/h2&gt;
+&lt;p&gt;Binary Search Algorithm(이진 탐색 알고리즘)는 값을 찾는 알고리즘 중 하나입니다.&lt;/p&gt;
+&lt;p&gt;값을 찾는 또 다른 알고리즘 중 “순환 참조 알고리즘”이 있습니다.&lt;/p&gt;
+&lt;p&gt;순환 참조 알고리즘은 배열 안의 모든 값을 대조해서 우리가 찾고자 하는 값을 찾게 됩니다.&lt;/p&gt;
+&lt;p&gt;물론 배열 내 값의 개수가 적을 때는 문제가 없지만 배열 내 값의 개수가 많다면 값을 하나씩 참조를 하며 처리시간이 많이 걸릴 것입니다.&lt;/p&gt;
+&lt;p&gt;순환 참조 알고리즘의 이러한 단점을 개선하기 위해 나온 알고리즘이 이진 탐색 알고리즘입니다.&lt;/p&gt;
+&lt;p&gt;Binary Search는 배열의 중앙에 있는 index와 검색 대상을 비교하여 절반씩 나눠 값을 찾는 알고리즘입니다.&lt;/p&gt;
+&lt;p&gt;하지만 Binary Search도 단점이 있는데, 순환 참조와 달리 정렬된 배열 안에서만 사용 가능한 알고리즘이라 사용 환경은 일부 제한되지만 순환 참조 알고리즘에 비해 속도가 빠른 알고리즘입니다.&lt;/p&gt;
+&lt;h2&gt;Binary Search 원리 설명&lt;/h2&gt;
+&lt;p&gt;먼저 검색할 값은 7로 지정하고 배열은 아래와 같이 구성하겠습니다.&lt;/p&gt;
+&lt;p&gt;그리고 검색 범위 기준점을 지정합니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/afdfe52b0ee3ba4595a11333068f8154/0a47e/binary-0.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 20.88607594936709%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAcElEQVQY03WPSwrAIAxEe/9bKvj/orjUKQYsInUxTDIhL+QBgDEGlk/13n/9rJd2xrM3rTVorVFrhXMOMUaEEJBS+uqcM81mZoyhnSuwlALGGLmUEt57KKXoiLUWQgiCTdDsOed0/Aq8vXxm59s78AWYSjgNHNUdFQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;binary-0.png&quot;
+        title=&quot;binary-0.png&quot;
+        src=&quot;/static/afdfe52b0ee3ba4595a11333068f8154/0a47e/binary-0.png&quot;
+        srcset=&quot;/static/afdfe52b0ee3ba4595a11333068f8154/c26ae/binary-0.png 158w,
+/static/afdfe52b0ee3ba4595a11333068f8154/6bdcf/binary-0.png 315w,
+/static/afdfe52b0ee3ba4595a11333068f8154/0a47e/binary-0.png 600w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;그리고 검색 범위 기준점을 지정합니다.&lt;/p&gt;
+&lt;p&gt;low는 초록색으로 0부터 지정합니다.&lt;/p&gt;
+&lt;p&gt;high는 빨간색으로 배열의 길이에서 -1을 빼서 index를 기준으로 잡힌 길이로 지정합니다.&lt;/p&gt;
+&lt;p&gt;마지막으로 mid는 보라색으로 지정하며 low와 high를 더한 뒤 2로 나눈 값을 지정하는데, 이때 출력된 값은 소수점이 나올 수 있어 index로 지정할 수 없으니 소수점을 버린 값을 가져와 배열의 중앙이 될 index를 아래와 같이 지정합니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6bc01a232f73dc19ff7aa6ee8429af67/0a47e/binary-1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 20.88607594936709%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAArElEQVQY02WQywrCMBBF+/9f0YVr9wWXdVFwZ6EoUhRqNEnTpo/tzJVOGi04hCRzQw45SbAUL0MmKSICM8saQpY+ZnGPeMocryKRkEma93xBqQ6YphnWWPihR1NblLmGazs45+C9h7UWvfdosgxjVQUw0Q9IK/A+nHCsdxjHCUq90PUtrucG+f6Bt9JQ6ikwrTWMMbilKbqi+AeG5y8awWGrHPW2yt98VcbmCz6ZrTStuP/yXAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;binary-1.png&quot;
+        title=&quot;binary-1.png&quot;
+        src=&quot;/static/6bc01a232f73dc19ff7aa6ee8429af67/0a47e/binary-1.png&quot;
+        srcset=&quot;/static/6bc01a232f73dc19ff7aa6ee8429af67/c26ae/binary-1.png 158w,
+/static/6bc01a232f73dc19ff7aa6ee8429af67/6bdcf/binary-1.png 315w,
+/static/6bc01a232f73dc19ff7aa6ee8429af67/0a47e/binary-1.png 600w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;그럼 이제 목표로 지정한 7이라는 값을 아래와 같이 노란색으로 지정하고 중앙에 있는 4와 비교를 해봅시다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/25ddeedc7430c675cb03efeecf3e8ca4/0a47e/binary-2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 20.88607594936709%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVQY02WQzQrCMBCE+/4vYQ+evUrBYxUK3qwURYpCiEnbNP277o4kaS3iks2yk+xHJhFcsFt+80FEYGZfg8i+ZyY4id1V5mU0nIVRRF5k8o2absjlAeM4oa5qdL2FKGvkqYZpDIzp0dorlN7DdhYiSTAURQATrUCagc/+jGO5xTCMkPKN1ja4XwTS3QtKKkhZQ+sThNygqjQecYw2y/6B4fmMufxYDlbXJAq52OQA+H7BByraM+UgwnlDAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;binary-2.png&quot;
+        title=&quot;binary-2.png&quot;
+        src=&quot;/static/25ddeedc7430c675cb03efeecf3e8ca4/0a47e/binary-2.png&quot;
+        srcset=&quot;/static/25ddeedc7430c675cb03efeecf3e8ca4/c26ae/binary-2.png 158w,
+/static/25ddeedc7430c675cb03efeecf3e8ca4/6bdcf/binary-2.png 315w,
+/static/25ddeedc7430c675cb03efeecf3e8ca4/0a47e/binary-2.png 600w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;중앙에 있는 4의 값이 7보다 작습니다.&lt;/p&gt;
+&lt;p&gt;그렇다면 배열의 범위는 최소 4 이상이라는 것을 알 수 있습니다.&lt;/p&gt;
+&lt;p&gt;그래서 low를 mid에서 +1을 더한 5라는 index로 지정해서 다시 반복을 합니다.&lt;/p&gt;
+&lt;p&gt;이제 다시 반복을 도는데 이번에는 low가 5로 다시 지정됐으니 우리가 참조할 범위를 아래와 같이 다시 지정합니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fe1ae9bf0aed12aabeae8893a82f0543/0a47e/binary-3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 20.88607594936709%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAmElEQVQY03WQyQrCQBBE8/9fEfwEb8GriDnlIJjLeBCMkigmBJ3pLDNPsojGpaEo6C4eVHsAzjk+fapuOQo7zT7zDOO9H9u2RURomqb3uq57GbmzPS845YpEFWyWR/K84BAElHE8gK39DdRa90BjDFUliFTcdMk6mbFLI1R0YTXfk2YZyve5huF/4HfVae3B7Sj3+sKY6YAPPKg24vlmEX4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;binary-3.png&quot;
+        title=&quot;binary-3.png&quot;
+        src=&quot;/static/fe1ae9bf0aed12aabeae8893a82f0543/0a47e/binary-3.png&quot;
+        srcset=&quot;/static/fe1ae9bf0aed12aabeae8893a82f0543/c26ae/binary-3.png 158w,
+/static/fe1ae9bf0aed12aabeae8893a82f0543/6bdcf/binary-3.png 315w,
+/static/fe1ae9bf0aed12aabeae8893a82f0543/0a47e/binary-3.png 600w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;여기서 다시 배열의 중간 지점을 찾게 되는데, 이번에는 중앙 지점을 7로 지정합니다.&lt;/p&gt;
+&lt;p&gt;중앙에 있는 값으로 지정한 7과 우리가 찾을 값을 비교하는데, 이때는 이미 mid와 목푯값이 같아 목표를 성공적으로 찾았습니다.&lt;/p&gt;
+&lt;p&gt;그러므로 mid - 1을 반환하여 목표 index의 값을 출력하고 while 반복에서 탈출합니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9dcbbf2fb080d18acc051aa183ffeade/0a47e/binary-4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 20.88607594936709%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAcUlEQVQY032QMQqAQAwE/f9v/IPgAwRrtRArC4tLcom3YhA9FK8IS5bswKYCgJQS3vo3QH7zzVb5YmZgZqiqa4wRInKrJcUybOia2T0W9kwRGEJwIBE55ASfQ8TQXTD2K9p6urwA0wKwVDWv+H3DAzwAjh07HD5CblIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;binary-4.png&quot;
+        title=&quot;binary-4.png&quot;
+        src=&quot;/static/9dcbbf2fb080d18acc051aa183ffeade/0a47e/binary-4.png&quot;
+        srcset=&quot;/static/9dcbbf2fb080d18acc051aa183ffeade/c26ae/binary-4.png 158w,
+/static/9dcbbf2fb080d18acc051aa183ffeade/6bdcf/binary-4.png 315w,
+/static/9dcbbf2fb080d18acc051aa183ffeade/0a47e/binary-4.png 600w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이제 순환 참조와 이진 탐색 알고리즘을 비교하기 위해 아래와 같이 코드를 작성합니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Code //&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; lists &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token builtin&quot;&gt;Array&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;100000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;_&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; i&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// circular reference&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;circular&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;list&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; target&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token builtin&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;circular time&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; list&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;list&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; target&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token builtin&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;timeEnd&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;circular time&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;X&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// binary search&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;binarySearch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;list&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; target&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; low &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; high &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; nums&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token builtin&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;binary search time&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+	&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;low &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; high&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; mid &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;high &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; low&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;nums&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;mid&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; target&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token builtin&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;timeEnd&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;binary search time&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; mid
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;nums&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;mid&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; target&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      high &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; mid &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;nums&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;mid&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; target&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      low &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; mid &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+		&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;X&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token builtin&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;circular&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lists&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;93742&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token builtin&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lists&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;93742&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이제 해당 함수를 실행했을 때 Binary Search가 얼마나 빠른지 아래와 같은 결과로 알 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 273px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/749e6cd10d43f683453d322726b06479/0217c/binary-result.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.0379746835443%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABxklEQVQoz52Ry3LaQBBF+YzYBAGSAI0sATJCrxkN6IkQYCpxxf//J8eFEmeTXRa3urpvL87tHjnCJ8tyDvpIrgp2uxAlBWWZEEaKKM446BxdVKRSE6cSJRXui0/Y5ew6SVRKVKowrSUjeyEoioqmammqjixNaSrB201TVGeKoqata+q253isUUqz3r6SXjXpe4nsarQ+4Hk+c3PByLYdolgShjFxJAmCHXGyQynJNgjZbF5J4pRclwNhJjVplhOrjCCOCeMMV3jM5zYz02a0WApkrtgne47HilwfCF5jLv0PojjF8zY0TUd7vlLVJ/rzlabp6c49SaIpygbTsge6gdC0PDxRE3gdthUw/m4wMWY8jydMjPmg57HBeGwM9el5Mujb02TYfcyMmcV0ZjGbPwgXHuGuZLvJ8b099mLFyvEQrs/KcRGuh+v6LFcuQvi8+Fs8b816E+Cvg6F3xMvgmw/Cx5fbpqZqG5IsJUkll/s7ZVGw3ydU5Yn77T7csyhPdP2N6+XGx68Prm8/6a93lNTU7YnlcsXIsn2C9Zlwe0E4EdPZfECf/okx/RvndzWm5j/68ofIpiUQIsJ1IpaL9WB8Hfh/9Am1UBq63DtjpQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;binary-result&quot;
+        title=&quot;binary-result&quot;
+        src=&quot;/static/749e6cd10d43f683453d322726b06479/0217c/binary-result.png&quot;
+        srcset=&quot;/static/749e6cd10d43f683453d322726b06479/c26ae/binary-result.png 158w,
+/static/749e6cd10d43f683453d322726b06479/0217c/binary-result.png 273w&quot;
+        sizes=&quot;(max-width: 273px) 100vw, 273px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[RN 에서 StatusBar가 안보이는 문제]]></title><description><![CDATA[이슈 발견 얼마 전 RN 프로젝트를 진행하며 레이아웃을 적용하게 되었는데, 이 과정에서 의 색상이 배경색과 비슷하게 보이는 문제가 발생하였습니다. 다행히 이전 글인 RN에서 Status Bar…]]></description><link>https://forestlee0513.github.io/RN-에서-StatusBar가-안보이는-문제/</link><guid isPermaLink="false">https://forestlee0513.github.io/RN-에서-StatusBar가-안보이는-문제/</guid><pubDate>Mon, 14 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;이슈 발견&lt;/h2&gt;
 &lt;p&gt;얼마 전 RN 프로젝트를 진행하며 레이아웃을 적용하게 되었는데, 이 과정에서 &lt;code class=&quot;language-text&quot;&gt;StatusBar&lt;/code&gt;의 색상이 배경색과 비슷하게 보이는 문제가 발생하였습니다.&lt;/p&gt;
 &lt;p&gt;다행히 이전 글인 &lt;strong&gt;RN에서 Status Bar 영역 구분&lt;/strong&gt; 글에서도 다뤘던 &lt;code class=&quot;language-text&quot;&gt;StatusBar&lt;/code&gt; 컴포넌트를 사용하여 제어가 가능하므로 오늘도 이것을 다루고자 합니다.&lt;/p&gt;
 &lt;h2&gt;StatusBar 살펴보기&lt;/h2&gt;
