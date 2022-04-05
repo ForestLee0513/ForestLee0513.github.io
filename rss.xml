@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[이우림]]></title><description><![CDATA[안녕하세요, 프론트엔드 엔지니어 이우림입니다.]]></description><link>https://forestlee0513.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Feb 2022 06:59:37 GMT</lastBuildDate><item><title><![CDATA[프론트엔드 엔지니어 이우림 입니다.]]></title><description><![CDATA[연락처 / URL 메일: woolimlee.dev@gmail.com 사용 기술 프론트엔드 언어 JavaScript TypeScript HTML CSS 프론트엔드 프레임워크 / 라이브러리 React Sass(Scss) node gulp Webpack…]]></description><link>https://forestlee0513.github.io/about-me/</link><guid isPermaLink="false">https://forestlee0513.github.io/about-me/</guid><content:encoded>&lt;h2&gt;연락처 / URL&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[이우림]]></title><description><![CDATA[안녕하세요, 프론트엔드 엔지니어 이우림입니다.]]></description><link>https://forestlee0513.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 Apr 2022 03:36:18 GMT</lastBuildDate><item><title><![CDATA[프론트엔드 엔지니어 이우림 입니다.]]></title><description><![CDATA[연락처 / URL 메일: woolimlee.dev@gmail.com 사용 기술 프론트엔드 언어 JavaScript TypeScript HTML CSS 프론트엔드 프레임워크 / 라이브러리 React Sass(Scss) node gulp Webpack…]]></description><link>https://forestlee0513.github.io/about-me/</link><guid isPermaLink="false">https://forestlee0513.github.io/about-me/</guid><content:encoded>&lt;h2&gt;연락처 / URL&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;메일: &lt;a href=&quot;mailto:woolimlee.dev@gmail.com&quot;&gt;woolimlee.dev@gmail.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -53,7 +53,137 @@
 &lt;p&gt;&lt;em&gt;2020.11 ~ 2021.01&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.piclick.me/&quot;&gt;피에스알미디어&lt;/a&gt;에서 Front-end Developer 직군 실습 후 정규직 전환&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Binary Search Algorithm]]></title><description><![CDATA[Binary Search 소개 Binary Search Algorithm…]]></description><link>https://forestlee0513.github.io/Binary-Search-Algorithm/</link><guid isPermaLink="false">https://forestlee0513.github.io/Binary-Search-Algorithm/</guid><pubDate>Tue, 22 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Binary Search 소개&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[styled-components의 theme에 타입 적용하기]]></title><description><![CDATA[잃어버린 theme 타입을 찾아서… React에서 styled-components를 사용하다 보면 전역 theme 변수를 지정해야 하는 상황이 생길 것입니다.  타입 선언 없이 theme를 불러올 때 theme…]]></description><link>https://forestlee0513.github.io/styled-components의-theme에-타입-적용하기/</link><guid isPermaLink="false">https://forestlee0513.github.io/styled-components의-theme에-타입-적용하기/</guid><pubDate>Tue, 05 Apr 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;잃어버린 theme 타입을 찾아서…&lt;/h2&gt;
+&lt;p&gt;React에서 styled-components를 사용하다 보면 전역 theme 변수를 지정해야 하는 상황이 생길 것입니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 439px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e88ca52226c0cdc42502daf9f38dcb75/e3b18/without-declare.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 15.18987341772152%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAt0lEQVQI1z3IW3KCMABAUZbQECpIIIRg5CmQgNSp03H/q7rO+NHzeaLilPJ9Sollgusm1u1gCTvTvGKbhmkNHI8niw/4sHEdJvx+x1jLPpT83CpMpVnDhjGG6GJyXJ1jtOL163k9d9Z55AgjnTP4uefv4dnCQtePVLXFtS1FqWmqM51VFCr/nFKKaG41t7bEWc2xXFh6Q60zhuaMqxWtzeltSn+1ZFmGEF8IIZBSEscJIpZImfzfGzheVRpxL319AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;타입 선언 없이 theme를 불러올 때 theme 타입&quot;
+        title=&quot;타입 선언 없이 theme를 불러올 때 theme 타입&quot;
+        src=&quot;/static/e88ca52226c0cdc42502daf9f38dcb75/e3b18/without-declare.png&quot;
+        srcset=&quot;/static/e88ca52226c0cdc42502daf9f38dcb75/c26ae/without-declare.png 158w,
+/static/e88ca52226c0cdc42502daf9f38dcb75/6bdcf/without-declare.png 315w,
+/static/e88ca52226c0cdc42502daf9f38dcb75/e3b18/without-declare.png 439w&quot;
+        sizes=&quot;(max-width: 439px) 100vw, 439px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;타입 선언 없이 theme를 불러올 때 theme 타입&lt;/p&gt;
+&lt;p&gt;상단 이미지와 같이 TypeScript와 styled-components가 적용된 프로젝트에서 theme를 적용할 수 있지만 작업하다 보면 자동완성이 되지 않는 것을 확인할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;그 이유는 styled-components에 있는 DefaultTheme 타입이 any로 지정되어 있어 TypeScript에서 에러가 발생하지 않지만 any 타입으로 지정되어 있어 올바른 객체로 접근할 수 있는지 확인할 수 없는 단점이 생깁니다.&lt;/p&gt;
+&lt;h2&gt;적용하기 전 필요한 개념 확인&lt;/h2&gt;
+&lt;h3&gt;&lt;a href=&quot;https://www.typescriptlang.org/ko/docs/handbook/declaration-files/by-example.html&quot;&gt;declare&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;주로 변수, 상수, class, module 등이 이미 선언되었다는 것을 선언하는 문법입니다. 이번 포스트에서는 module을 declare 하는 방법을 다루고 있습니다.&lt;/p&gt;
+&lt;p&gt;또한 이 포스트에는 외부 라이브러리를 선언하는 방법도 포함되어 있으니 &lt;a href=&quot;https://www.typescriptlang.org/ko/docs/handbook/declaration-files/library-structures.html&quot;&gt;TypeScript 문서에 포함된 Library Structures&lt;/a&gt;을 참고하시면 됩니다.&lt;/p&gt;
+&lt;p&gt;선언된 변수들을 파일에 별도로 포함할 수 있는데, 이 파일의 확장명은 &lt;code class=&quot;language-text&quot;&gt;.d.ts&lt;/code&gt;입니다.&lt;/p&gt;
+&lt;p&gt;이 &lt;code class=&quot;language-text&quot;&gt;d.ts&lt;/code&gt;안에서는 선언부만 포함되어 있고 구현부는 포함 되지 않은게 특징입니다.&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://www.typescriptlang.org/docs/handbook/2/typeof-types.html#the-typeof-type-operator&quot;&gt;typeof&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;TypeScript에서 변수의 타입을 유추하기 위한 문법입니다.&lt;/p&gt;
+&lt;p&gt;이미 JavaScript에서도 존재하는 문법이지만 TypeScript에서도 Type 선언을 위해 사용할 수 있으며, 객체에서 사용할 경우 JavaScript에선 &lt;code class=&quot;language-text&quot;&gt;object&lt;/code&gt;이라고만 출력 되지만 TypeScript에서는 해당 객체 안에 있는 값의 타입까지 유추합니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Example&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// as const로 상수 처리 후 아래와 같이 ThemeValue를 추가한다면 더욱 안전한 Union 타입으로 지정 가능합니다.&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; theme &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  colors&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    primary&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;blue&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    secondary&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;lightgray&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    white&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;#fff&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    black&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;#000&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  font&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    family&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Spoqa Han Sans Neo&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    baseSize&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;16px&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  container&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    maxWidth&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      pc&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;1200px&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      tablet&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;700px&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      mobile&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;500px&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Theme&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; theme
+&lt;span class=&quot;token keyword&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ThemeValue&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Theme&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;keyof&lt;/span&gt; Theme&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;theme 타입 선언하기&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;필자는 declare 파일을 src/types 폴더에 생성하는 것으로 진행했으나, 본인이 관리하기 편한 위치에 생성하셔도 괜찮습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;styled-component에 있는 theme의 기본 타입이 any라는 것을 알았으니 한번 적용해 봅시다.&lt;/p&gt;
+&lt;p&gt;먼저 상단 예제에 있는 theme.ts에서 Theme라는 type를 typeof로 export합니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// theme.ts&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Theme&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; theme
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; theme&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;그리고 &lt;code class=&quot;language-text&quot;&gt;styled-components.d.ts&lt;/code&gt; 파일을 만듭니다.&lt;/p&gt;
+&lt;p&gt;그다음 파일을 열고 아래와 같이 코드를 작성합니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;styled-components&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Theme &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;../styles/theme&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;declare&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;styled-components&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// eslint 적용 시 아래와 같이 ignore를 적용하지 않으면 lint 에러가 발생합니다.&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// eslint를 적용하지 않았다면 아래 주석을 삭제하셔도 됩니다.&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// eslint-disable-next-line @typescript-eslint/no-empty-interface&lt;/span&gt;
+  &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;DefaultTheme&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Theme&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;만약 이 과정을 모두 마쳤다면 이제부터 코드를 이해하기 위해 내용을 풀어봅시다.&lt;/p&gt;
+&lt;p&gt;먼저 styled-component module의 타입을 수정하기 위해 styled-components를 import 하고
+ &lt;code class=&quot;language-text&quot;&gt;declare module &quot;styled-components&quot;&lt;/code&gt;를 작성합니다.&lt;/p&gt;
+&lt;p&gt;그다음 Theme(Theme 객체의 typeof 타입)를 import 하여 &lt;code class=&quot;language-text&quot;&gt;DefaultTheme&lt;/code&gt; interface에 extends를 해서 DefaultTheme에 any 대신 Theme 타입이 적용되게 합니다.&lt;/p&gt;
+&lt;p&gt;성공적으로 export 했다면 styled-components 코드에서 &lt;code class=&quot;language-text&quot;&gt;${(props) =&gt; props.theme...}&lt;/code&gt;를 입력할 때 타입이 아래와 같이 정상적으로 지정되는 것을 확인할 수 있습니다. (첫 번째 이미지와 비교해 보시면 이해하기 쉽습니다.)&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 591px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bb806c98c4638433916187f2f82c1e7c/e4c9a/declared.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 12.658227848101264%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAwklEQVQI1z3Ky06DQABAUfZq4gwghXlQikCKFFpqgKG0Rt0a/TcXxr+9Jl24OLvjKaXZtR3jNDGdFrquo941vLy+MbqZYRzpR8fgTuwPz7SHPW65sHksOD4Z+q2hKCvcPLOcz3j3QjLMF6ptTaINcaKI4gSTZihtsNaibYq1KcZYjLVkm5w4SUh1dKWUIlqtuLm9w6tyw/vS0Tc5xTqmKTVlpmhLRV2ur1lKQeD7/6SUhEGAH4QE4QNCCL4+P/j9+eYP0pFW1xp8xoUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;타입 선언 후 불러온 theme 타입&quot;
+        title=&quot;타입 선언 후 불러온 theme 타입&quot;
+        src=&quot;/static/bb806c98c4638433916187f2f82c1e7c/e4c9a/declared.png&quot;
+        srcset=&quot;/static/bb806c98c4638433916187f2f82c1e7c/c26ae/declared.png 158w,
+/static/bb806c98c4638433916187f2f82c1e7c/6bdcf/declared.png 315w,
+/static/bb806c98c4638433916187f2f82c1e7c/e4c9a/declared.png 591w&quot;
+        sizes=&quot;(max-width: 591px) 100vw, 591px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;타입 선언 후 불러온 theme 타입&lt;/p&gt;
+&lt;h2&gt;최종 결과물&lt;/h2&gt;
+&lt;h3&gt;선언 전&lt;/h3&gt;
+&lt;iframe src=&quot;https://codesandbox.io/embed/original-method-8rcmzx?autoresize=1&amp;fontsize=14&amp;theme=dark&quot; style=&quot;width:100%;&quot; height=&quot;500px&quot;&gt;&lt;/iframe&gt;
+&lt;h3&gt;선언 후&lt;/h3&gt;
+&lt;iframe src=&quot;https://codesandbox.io/embed/theme-with-declare-wf76qt?fontsize=14&amp;hidenavigation=1&amp;theme=dark&quot; style=&quot;width:100%;&quot; height=&quot;500px&quot;&gt;&lt;/iframe&gt;</content:encoded></item><item><title><![CDATA[Binary Search Algorithm]]></title><description><![CDATA[Binary Search 소개 Binary Search Algorithm…]]></description><link>https://forestlee0513.github.io/Binary-Search-Algorithm/</link><guid isPermaLink="false">https://forestlee0513.github.io/Binary-Search-Algorithm/</guid><pubDate>Tue, 22 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Binary Search 소개&lt;/h2&gt;
 &lt;p&gt;Binary Search Algorithm(이진 탐색 알고리즘)는 값을 찾는 알고리즘 중 하나입니다.&lt;/p&gt;
 &lt;p&gt;값을 찾는 또 다른 알고리즘 중 “순환 참조 알고리즘”이 있습니다.&lt;/p&gt;
 &lt;p&gt;순환 참조 알고리즘은 배열 안의 모든 값을 대조해서 우리가 찾고자 하는 값을 찾게 됩니다.&lt;/p&gt;
