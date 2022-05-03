@@ -1,6 +1,6 @@
 ---
 title: "styled-components의 theme에 타입 적용하기"
-description: "잃어버린 styled-component theme의 타입을 찾아서..."
+description: "잃어버린 styled-components theme의 타입을 찾아서..."
 date: "2022-04-05"
 ---
 
