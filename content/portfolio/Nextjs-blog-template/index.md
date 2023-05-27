@@ -1,6 +1,6 @@
 ---
 title: "Next.js Blog Template"
-date: "2023-12-28"
+date: "2023-01-23"
 thumbnail: ./blog-template-index.png
 ---
 
